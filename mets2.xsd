@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.loc.gov/METS2/" xmlns="http://www.loc.gov/METS2/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:premis="info:lc/xmlns/premis-v2" elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xsd:import namespace="info:lc/xmlns/premis-v2"
+        schemaLocation="http://www.loc.gov/standards/premis/v2/premis.xsd"/>
+
+    <xsd:annotation>
+        <xsd:documentation> METS 2: Metadata Encoding and Transmission Standard Version 2 
+            Copyright © 2013 Digital Library Federation 
+            January, 2013 Version 2.0 
+            This is the first 2.x version of METS. It is not compatible with 
+            the previous 1.x versions. It draws heavily on the PREMIS specification and 
+            reuses PREMIS types whenever possible. </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="mets">
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="metsComplexType"/>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="metsComplexType">
+        <xsd:sequence>
+            <xsd:element ref="header" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xs:element name="header" type="metsHeaderComplexType"/>
+    <xs:complexType name="metsHeaderComplexType">
+        <xs:annotation>
+            <xs:documentation>One issue is differentiating properties that apply to the intellectual entity versus 
+            properties that apply to METS XML document.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xsd:element ref="intellectualEntityLabel" minOccurs="0" maxOccurs="1"/>
+            
+            <xsd:element ref="intellectualEntityType" minOccurs="0" maxOccurs="1"/>
+            
+            <xsd:element ref="metsProfile" minOccurs="0" maxOccurs="1"/>
+            
+            <xsd:element ref="metsStatus" minOccurs="0" maxOccurs="1"/>
+            
+            <xsd:element ref="premis:linkingIntellectualEntityIdentifier" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>This subsumes the OBJID and altRecordId identifiers in METS 1.
+                        These identify the intellectual entity associated with the METS documents.
+                        For example, it could be an ISBN for a book, or a DOI for a journal article, etc.</xs:documentation>
+                </xs:annotation>
+            </xsd:element>
+            
+            <xsd:element ref="premis:objectIdentifier" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>This subsumes the metsDocumentID in METS 1. It is the
+                        identifier for the METS document itself.</xs:documentation>
+                </xs:annotation>
+            </xsd:element>
+            
+            <xsd:element ref="premis:linkingEventIdentifier" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Events that happen to the METS document, such as creation or
+                        modification, are tracked as PREMIS Events. This subsumes the CREATEDATE and
+                        LASTMODDATE attributes.</xs:documentation>
+                </xs:annotation>
+            </xsd:element>
+            
+            <xsd:element ref="premis:linkingRightsStatementIdentifier" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Rights associated with the object are tracked as
+                        PREMIS Rights.</xs:documentation>
+                </xs:annotation>
+            </xsd:element>
+            
+            <xsd:element ref="premis:linkingAgentIdentifier" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Agents associated with the METS document, but not necessarily
+                        associated with events that have occurred to the document or rights
+                        associated with the document, are tracked as PREMIS
+                        Agents.</xs:documentation>
+                </xs:annotation>
+            </xsd:element>
+            
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="intellectualEntityLabel" type="xs:string"/>
+    <xs:element name="intellectualEntityType" type="xs:string"/>
+    <xs:element name="metsProfile" type="xs:string"/>
+    <xs:element name="metsStatus" type="xs:string"/>
+
+</xsd:schema>
