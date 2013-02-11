@@ -47,12 +47,21 @@
                     </p:formatDesignation>
                 </p:format>
             </p:objectCharacteristics>
+            <objectSequence>1</objectSequence>
             <objectLocation>
                 <objectLocationType></objectLocationType>
                 <objectLocationValue></objectLocationValue>
             </objectLocation>
-         </p:object>
+            <objectContent>
+                <binaryData></binaryData>
+            </objectContent>
+            <objectLocation>
+                <objectLocationType></objectLocationType>
+                <objectLocationValue></objectLocationValue>
+            </objectLocation>
+        </p:object>
         <objectGroup>
+            <objectGroupSequence>1</objectGroupSequence>
             <objectGroup></objectGroup>
         </objectGroup>
         <p:object xsi:type="p:file">

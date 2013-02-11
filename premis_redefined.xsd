@@ -36,9 +36,10 @@
             <xs:complexContent>
                 <xs:extension base="file">
                     <xs:sequence>
+                        <xs:element ref="mets:objectSequence" minOccurs="0" maxOccurs="1"/>
                         <xs:choice minOccurs="0" maxOccurs="unbounded">
-                            <xs:element ref="mets:objectLocation"/>
-                            <xs:element ref="mets:objectContent"/>                          
+                            <xs:element ref="mets:objectLocation" minOccurs="0" maxOccurs="1" />
+                            <xs:element ref="mets:objectContent" minOccurs="0" maxOccurs="1"/>                          
                         </xs:choice>
                     </xs:sequence>
                 </xs:extension>
