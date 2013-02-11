@@ -7,6 +7,7 @@
         <intellectualEntityLabel></intellectualEntityLabel>
         <intellectualEntityType></intellectualEntityType>
         <metsProfile></metsProfile>
+        <metsUse></metsUse>
         <metsStatus></metsStatus>
         <p:linkingIntellectualEntityIdentifier >
             <p:linkingIntellectualEntityIdentifierType></p:linkingIntellectualEntityIdentifierType>
@@ -26,4 +27,47 @@
             <p:linkingAgentRole></p:linkingAgentRole>
         </p:linkingAgentIdentifier>
     </header>
+    <objectGroup>
+        <objectGroupIdentifier>
+            <p:objectIdentifierType></p:objectIdentifierType>
+            <p:objectIdentifierValue></p:objectIdentifierValue>
+        </objectGroupIdentifier>
+        <objectGroupUse></objectGroupUse>
+        <objectGroupStatus></objectGroupStatus>
+        <p:object xsi:type="p:file">
+            <p:objectIdentifier>
+                <p:objectIdentifierType></p:objectIdentifierType>
+                <p:objectIdentifierValue></p:objectIdentifierValue>
+            </p:objectIdentifier>
+            <p:objectCharacteristics>
+                <p:compositionLevel>0</p:compositionLevel>
+                <p:format>
+                    <p:formatDesignation>
+                        <p:formatName></p:formatName>
+                    </p:formatDesignation>
+                </p:format>
+            </p:objectCharacteristics>
+            <objectLocation>
+                <objectLocationType></objectLocationType>
+                <objectLocationValue></objectLocationValue>
+            </objectLocation>
+         </p:object>
+        <objectGroup>
+            <objectGroup></objectGroup>
+        </objectGroup>
+        <p:object xsi:type="p:file">
+            <p:objectIdentifier>
+                <p:objectIdentifierType></p:objectIdentifierType>
+                <p:objectIdentifierValue></p:objectIdentifierValue>
+            </p:objectIdentifier>
+            <p:objectCharacteristics>
+                <p:compositionLevel>0</p:compositionLevel>
+                <p:format>
+                    <p:formatDesignation>
+                        <p:formatName></p:formatName>
+                    </p:formatDesignation>
+                </p:format>
+            </p:objectCharacteristics>
+        </p:object>
+    </objectGroup>
 </mets>

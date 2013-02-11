@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns="info:lc/xmlns/premis-v2" 
+    xmlns:mets="http://www.loc.gov/METS2/"
+    targetNamespace="info:lc/xmlns/premis-v2" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified">
+    
+    <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.loc.gov/standards/xlink/xlink.xsd"/>
+
+    <xs:import namespace="http://www.loc.gov/METS2/"
+        schemaLocation="mets2.xsd"/>
+
+    <xs:annotation>
+        <xs:documentation > 
+            PREMIS Redefined: PREMIS XML Schema Redefined for Use with METS 2 
+            Copyright © 2013 Digital Library Federation 
+            January, 2013 Version 2.0 
+            This is the 2.x version of Premis Redefined for use with METS 2.x . 
+        </xs:documentation>
+        <xs:documentation>
+            "PREMIS Redefined" by Digital Library Federation
+            
+            To the extent possible under law, the person who associated CC0 with
+            METS 2 has waived all copyright and related or neighboring rights
+            to METS 2.
+            
+            You should have received a copy of the CC0 legalcode along with this
+            work.  If not, see &lt;http://creativecommons.org/publicdomain/zero/1.0/&gt;.
+        </xs:documentation>
+    </xs:annotation>
+
+    <xs:redefine schemaLocation="http://www.loc.gov/standards/premis/v2/premis.xsd" >
+        <xs:complexType name="file">
+            <xs:complexContent>
+                <xs:extension base="file">
+                    <xs:sequence>
+                        <xs:choice minOccurs="0" maxOccurs="unbounded">
+                            <xs:element ref="mets:objectLocation"/>
+                            <xs:element ref="mets:objectContent"/>                          
+                        </xs:choice>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:redefine>
+    
+    
+</xs:schema>
+    
+    
