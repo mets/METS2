@@ -5,7 +5,7 @@
     attributeFormDefault="unqualified">
 
     <xs:import namespace="info:lc/xmlns/premis-v2"
-        schemaLocation="premis_redefined.xsd"/>
+        schemaLocation="premis_mets_extensions.xsd"/>
     
     <xs:annotation>
         <xs:documentation > 
