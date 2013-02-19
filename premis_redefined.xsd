@@ -42,9 +42,9 @@
                         </xs:documentation>
                     </xs:annotation>
                     <xs:sequence>
-                        <xs:element ref="mets:objectSequence" minOccurs="0" maxOccurs="1"/>
-                        <xs:element ref="mets:objectStatus" minOccurs="0" maxOccurs="1"/>
                         <xs:element ref="mets:objectUse" minOccurs="0" maxOccurs="1"/>
+                        <xs:element ref="mets:objectStatus" minOccurs="0" maxOccurs="1"/>
+                        <xs:element ref="mets:objectSequence" minOccurs="0" maxOccurs="1"/>
                         <xs:choice minOccurs="0" maxOccurs="unbounded">
                             <xs:element ref="mets:objectLocation" minOccurs="0" maxOccurs="1" >
                                 <xs:annotation>

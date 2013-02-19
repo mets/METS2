@@ -47,6 +47,8 @@
                     </premis:formatDesignation>
                 </premis:format>
             </premis:objectCharacteristics>
+            <mets:objectUse></mets:objectUse>
+            <mets:objectStatus></mets:objectStatus>
             <mets:objectSequence>1</mets:objectSequence>
             <mets:objectLocation>
                 <mets:objectLocationType></mets:objectLocationType>
