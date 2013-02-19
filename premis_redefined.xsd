@@ -35,11 +35,31 @@
         <xs:complexType name="file">
             <xs:complexContent>
                 <xs:extension base="file">
+                    <xs:annotation >
+                        <xs:documentation >
+                            The PREMIS file type is being extended to append some elements from the METS namespace, including the ability to 
+                            point to the location of the file or to 
+                        </xs:documentation>
+                    </xs:annotation>
                     <xs:sequence>
                         <xs:element ref="mets:objectSequence" minOccurs="0" maxOccurs="1"/>
+                        <xs:element ref="mets:objectStatus" minOccurs="0" maxOccurs="1"/>
+                        <xs:element ref="mets:objectUse" minOccurs="0" maxOccurs="1"/>
                         <xs:choice minOccurs="0" maxOccurs="unbounded">
-                            <xs:element ref="mets:objectLocation" minOccurs="0" maxOccurs="1" />
-                            <xs:element ref="mets:objectContent" minOccurs="0" maxOccurs="1"/>                          
+                            <xs:element ref="mets:objectLocation" minOccurs="0" maxOccurs="1" >
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        This is points to the location of the file, equivalent to the METS 1 FLocat element.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element ref="mets:objectContent" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        This embeds the actual file content, equivalent to the METS 1 FContent element.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>                          
                         </xs:choice>
                     </xs:sequence>
                 </xs:extension>

@@ -47,7 +47,7 @@
     <xs:element name="objectGroup" type="objectGroupComplexType"/>
     <xs:complexType name="objectGroupComplexType">
         <xs:annotation>
-            <xs:documentation>All the information entities packaged within the METS file are organized and contained in a fileGroup elements.</xs:documentation>
+            <xs:documentation>All the information entities packaged within the METS file are organized and contained in a objectGroup elements.</xs:documentation>
         </xs:annotation>
         <xs:sequence>
             <xs:element ref="objectGroupIdentifier"  minOccurs="0" maxOccurs="unbounded"/>
@@ -62,7 +62,13 @@
         </xs:sequence>
     </xs:complexType>
     
-    <xs:element name="objectGroupIdentifier" type="premis:objectIdentifierComplexType"/>
+    <xs:element name="objectGroupIdentifier" type="objectGroupIdentifierComplexType"/>
+    <xs:complexType name="objectGroupIdentifierComplexType">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element ref="objectGroupIdentifierType"/>
+            <xs:element ref="objectGroupIdentifierValue"/>
+        </xs:sequence>
+    </xs:complexType>
     
     <xs:element name="objectLocation" type="objectLocationComplexType"/>
     <xs:complexType name="objectLocationComplexType">
@@ -148,10 +154,14 @@
     <xs:element name="metsStatus" type="xs:string"/>
     <xs:element name="metsUse" type="xs:string"/>
     
+    <xs:element name="objectGroupIdentifierType" type="xs:string"/>
+    <xs:element name="objectGroupIdentifierValue" type="xs:string"/>
     <xs:element name="objectGroupStatus" type="xs:string"/>
     <xs:element name="objectGroupUse" type="xs:string"/>
     <xs:element name="objectGroupSequence" type="xs:int"/>
     
+    <xs:element name="objectStatus" type="xs:string"/>
+    <xs:element name="objectUse" type="xs:string"/>
     <xs:element name="objectSequence" type="xs:int"/>
     <xs:element name="objectLocationType" type="xs:string"/>
     <xs:element name="objectLocationValue" type="xs:string"/>

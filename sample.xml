@@ -1,82 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mets xmlns="http://www.loc.gov/METS2/"
-    xmlns:p="info:lc/xmlns/premis-v2" 
+<mets:mets xmlns:mets="http://www.loc.gov/METS2/"
+    xmlns:premis="info:lc/xmlns/premis-v2" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.loc.gov/METS2/ mets2.xsd">
-    <header>
-        <intellectualEntityLabel></intellectualEntityLabel>
-        <intellectualEntityType></intellectualEntityType>
-        <metsProfile></metsProfile>
-        <metsUse></metsUse>
-        <metsStatus></metsStatus>
-        <p:linkingIntellectualEntityIdentifier >
-            <p:linkingIntellectualEntityIdentifierType></p:linkingIntellectualEntityIdentifierType>
-            <p:linkingIntellectualEntityIdentifierValue></p:linkingIntellectualEntityIdentifierValue>
-        </p:linkingIntellectualEntityIdentifier>
-        <p:objectIdentifier  >
-            <p:objectIdentifierType></p:objectIdentifierType>
-            <p:objectIdentifierValue></p:objectIdentifierValue>
-        </p:objectIdentifier>
-        <p:linkingEventIdentifier >
-            <p:linkingEventIdentifierType></p:linkingEventIdentifierType>
-            <p:linkingEventIdentifierValue></p:linkingEventIdentifierValue>
-        </p:linkingEventIdentifier>
-        <p:linkingAgentIdentifier >
-            <p:linkingAgentIdentifierType></p:linkingAgentIdentifierType>
-            <p:linkingAgentIdentifierValue></p:linkingAgentIdentifierValue>
-            <p:linkingAgentRole></p:linkingAgentRole>
-        </p:linkingAgentIdentifier>
-    </header>
-    <objectGroup>
-        <objectGroupIdentifier>
-            <p:objectIdentifierType></p:objectIdentifierType>
-            <p:objectIdentifierValue></p:objectIdentifierValue>
-        </objectGroupIdentifier>
-        <objectGroupUse></objectGroupUse>
-        <objectGroupStatus></objectGroupStatus>
-        <p:object xsi:type="p:file">
-            <p:objectIdentifier>
-                <p:objectIdentifierType></p:objectIdentifierType>
-                <p:objectIdentifierValue></p:objectIdentifierValue>
-            </p:objectIdentifier>
-            <p:objectCharacteristics>
-                <p:compositionLevel>0</p:compositionLevel>
-                <p:format>
-                    <p:formatDesignation>
-                        <p:formatName></p:formatName>
-                    </p:formatDesignation>
-                </p:format>
-            </p:objectCharacteristics>
-            <objectSequence>1</objectSequence>
-            <objectLocation>
-                <objectLocationType></objectLocationType>
-                <objectLocationValue></objectLocationValue>
-            </objectLocation>
-            <objectContent>
-                <binaryData></binaryData>
-            </objectContent>
-            <objectLocation>
-                <objectLocationType></objectLocationType>
-                <objectLocationValue></objectLocationValue>
-            </objectLocation>
-        </p:object>
-        <objectGroup>
-            <objectGroupSequence>1</objectGroupSequence>
-            <objectGroup></objectGroup>
-        </objectGroup>
-        <p:object xsi:type="p:file">
-            <p:objectIdentifier>
-                <p:objectIdentifierType></p:objectIdentifierType>
-                <p:objectIdentifierValue></p:objectIdentifierValue>
-            </p:objectIdentifier>
-            <p:objectCharacteristics>
-                <p:compositionLevel>0</p:compositionLevel>
-                <p:format>
-                    <p:formatDesignation>
-                        <p:formatName></p:formatName>
-                    </p:formatDesignation>
-                </p:format>
-            </p:objectCharacteristics>
-        </p:object>
-    </objectGroup>
-</mets>
+    <mets:header>
+        <mets:intellectualEntityLabel></mets:intellectualEntityLabel>
+        <mets:intellectualEntityType></mets:intellectualEntityType>
+        <mets:metsProfile></mets:metsProfile>
+        <mets:metsUse></mets:metsUse>
+        <mets:metsStatus></mets:metsStatus>
+        <premis:linkingIntellectualEntityIdentifier >
+            <premis:linkingIntellectualEntityIdentifierType></premis:linkingIntellectualEntityIdentifierType>
+            <premis:linkingIntellectualEntityIdentifierValue></premis:linkingIntellectualEntityIdentifierValue>
+        </premis:linkingIntellectualEntityIdentifier>
+        <premis:objectIdentifier  >
+            <premis:objectIdentifierType></premis:objectIdentifierType>
+            <premis:objectIdentifierValue></premis:objectIdentifierValue>
+        </premis:objectIdentifier>
+        <premis:linkingEventIdentifier >
+            <premis:linkingEventIdentifierType></premis:linkingEventIdentifierType>
+            <premis:linkingEventIdentifierValue></premis:linkingEventIdentifierValue>
+        </premis:linkingEventIdentifier>
+        <premis:linkingAgentIdentifier >
+            <premis:linkingAgentIdentifierType></premis:linkingAgentIdentifierType>
+            <premis:linkingAgentIdentifierValue></premis:linkingAgentIdentifierValue>
+            <premis:linkingAgentRole></premis:linkingAgentRole>
+        </premis:linkingAgentIdentifier>
+    </mets:header>
+    <mets:objectGroup>
+        <mets:objectGroupIdentifier>
+            <mets:objectGroupIdentifierType></mets:objectGroupIdentifierType>
+            <mets:objectGroupIdentifierValue></mets:objectGroupIdentifierValue>
+        </mets:objectGroupIdentifier>
+        <mets:objectGroupUse></mets:objectGroupUse>
+        <mets:objectGroupStatus></mets:objectGroupStatus>
+        <premis:object xsi:type="premis:file">
+            <premis:objectIdentifier>
+                <premis:objectIdentifierType></premis:objectIdentifierType>
+                <premis:objectIdentifierValue></premis:objectIdentifierValue>
+            </premis:objectIdentifier>
+            <premis:objectCharacteristics>
+                <premis:compositionLevel>0</premis:compositionLevel>
+                <premis:format>
+                    <premis:formatDesignation>
+                        <premis:formatName></premis:formatName>
+                    </premis:formatDesignation>
+                </premis:format>
+            </premis:objectCharacteristics>
+            <mets:objectSequence>1</mets:objectSequence>
+            <mets:objectLocation>
+                <mets:objectLocationType></mets:objectLocationType>
+                <mets:objectLocationValue></mets:objectLocationValue>
+            </mets:objectLocation>
+            <mets:objectContent>
+                <mets:binaryData></mets:binaryData>
+            </mets:objectContent>
+            <mets:objectLocation>
+                <mets:objectLocationType></mets:objectLocationType>
+                <mets:objectLocationValue></mets:objectLocationValue>
+            </mets:objectLocation>
+        </premis:object>
+        <mets:objectGroup>
+            <mets:objectGroupSequence>1</mets:objectGroupSequence>
+            <mets:objectGroup>
+                <premis:object xsi:type="premis:representation">
+                    <premis:objectIdentifier>
+                        <premis:objectIdentifierType></premis:objectIdentifierType>
+                        <premis:objectIdentifierValue></premis:objectIdentifierValue>
+                    </premis:objectIdentifier>
+                </premis:object>
+            </mets:objectGroup>
+        </mets:objectGroup>
+        <premis:object xsi:type="premis:file">
+            <premis:objectIdentifier>
+                <premis:objectIdentifierType></premis:objectIdentifierType>
+                <premis:objectIdentifierValue></premis:objectIdentifierValue>
+            </premis:objectIdentifier>
+            <premis:objectCharacteristics>
+                <premis:compositionLevel>0</premis:compositionLevel>
+                <premis:format>
+                    <premis:formatDesignation>
+                        <premis:formatName></premis:formatName>
+                    </premis:formatDesignation>
+                </premis:format>
+            </premis:objectCharacteristics>
+        </premis:object>
+    </mets:objectGroup>
+</mets:mets>
