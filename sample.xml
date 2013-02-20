@@ -5,86 +5,156 @@
     xsi:schemaLocation="http://www.loc.gov/METS2/ mets2.xsd">
     
     <mets:header>
-        <mets:intellectualEntityLabel></mets:intellectualEntityLabel>
-        <mets:intellectualEntityType></mets:intellectualEntityType>
-        <mets:metsProfile></mets:metsProfile>
-        <mets:metsUse></mets:metsUse>
-        <mets:metsStatus></mets:metsStatus>
+        <mets:intellectualEntityLabel>Einstein's Tongue</mets:intellectualEntityLabel>
+        <mets:intellectualEntityType>Photograph</mets:intellectualEntityType>
+        <mets:metsProfile>http://www.loc.gov/mets/profiles/99999999.xml</mets:metsProfile>
+        <mets:metsUse>SIP</mets:metsUse>
+        <mets:metsStatus>ACTIVE</mets:metsStatus>
         <premis:linkingIntellectualEntityIdentifier >
-            <premis:linkingIntellectualEntityIdentifierType></premis:linkingIntellectualEntityIdentifierType>
-            <premis:linkingIntellectualEntityIdentifierValue></premis:linkingIntellectualEntityIdentifierValue>
+            <premis:linkingIntellectualEntityIdentifierType>URL</premis:linkingIntellectualEntityIdentifierType>
+            <premis:linkingIntellectualEntityIdentifierValue>http://en.wikipedia.org/wiki/File:Einstein_tongue.jpg</premis:linkingIntellectualEntityIdentifierValue>
         </premis:linkingIntellectualEntityIdentifier>
         <premis:objectIdentifier  >
-            <premis:objectIdentifierType></premis:objectIdentifierType>
-            <premis:objectIdentifierValue></premis:objectIdentifierValue>
+            <premis:objectIdentifierType>LOCAL</premis:objectIdentifierType>
+            <premis:objectIdentifierValue>METS_0001</premis:objectIdentifierValue>
         </premis:objectIdentifier>
         <premis:linkingEventIdentifier >
-            <premis:linkingEventIdentifierType></premis:linkingEventIdentifierType>
-            <premis:linkingEventIdentifierValue></premis:linkingEventIdentifierValue>
+            <premis:linkingEventIdentifierType>LOCAL</premis:linkingEventIdentifierType>
+            <premis:linkingEventIdentifierValue>EVT_0001</premis:linkingEventIdentifierValue>
         </premis:linkingEventIdentifier>
         <premis:linkingAgentIdentifier >
-            <premis:linkingAgentIdentifierType></premis:linkingAgentIdentifierType>
-            <premis:linkingAgentIdentifierValue></premis:linkingAgentIdentifierValue>
-            <premis:linkingAgentRole></premis:linkingAgentRole>
+            <premis:linkingAgentIdentifierType>EMAIL</premis:linkingAgentIdentifierType>
+            <premis:linkingAgentIdentifierValue>thabing@uiuc.edu</premis:linkingAgentIdentifierValue>
+            <premis:linkingAgentRole>CREATOR</premis:linkingAgentRole>
         </premis:linkingAgentIdentifier>
     </mets:header>
     <mets:objectGroup>
-        <mets:objectGroupIdentifier>
-            <mets:objectGroupIdentifierType></mets:objectGroupIdentifierType>
-            <mets:objectGroupIdentifierValue></mets:objectGroupIdentifierValue>
-        </mets:objectGroupIdentifier>
-        <mets:objectGroupUse></mets:objectGroupUse>
-        <mets:objectGroupStatus></mets:objectGroupStatus>
+        <mets:objectGroupUse>CONTENT FILES</mets:objectGroupUse>
+        <mets:objectGroup>
+            <mets:objectGroupUse>LO-RES COPY</mets:objectGroupUse>
+            <mets:objectGroupStatus>APPROVED</mets:objectGroupStatus>
+            <premis:object xsi:type="premis:file">
+                <premis:objectIdentifier>
+                    <premis:objectIdentifierType>LOCAL</premis:objectIdentifierType>
+                    <premis:objectIdentifierValue>OBJ_0001</premis:objectIdentifierValue>
+                </premis:objectIdentifier>
+                <premis:objectCharacteristics>
+                    <premis:compositionLevel>0</premis:compositionLevel>
+                    <premis:fixity>
+                        <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+                        <premis:messageDigest>1234567890abcdef</premis:messageDigest>
+                    </premis:fixity>
+                    <premis:format>
+                        <premis:formatDesignation>
+                            <premis:formatName>image/jpeg</premis:formatName>
+                        </premis:formatDesignation>
+                    </premis:format>
+                </premis:objectCharacteristics>
+                <premis:storage>
+                    <premis:contentLocation>
+                        <premis:contentLocationType>URL</premis:contentLocationType>
+                        <premis:contentLocationValue>http://upload.wikimedia.org/wikipedia/en/thumb/8/86/Einstein_tongue.jpg/220px-Einstein_tongue.jpg</premis:contentLocationValue>
+                    </premis:contentLocation>
+                </premis:storage>
+                <premis:relationship>
+                    <premis:relationshipType>METADATA</premis:relationshipType>
+                    <premis:relationshipSubType>DESCRIPTIVE</premis:relationshipSubType>
+                    <premis:relatedObjectIdentification>
+                        <premis:relatedObjectIdentifierType>LOCAL</premis:relatedObjectIdentifierType>
+                        <premis:relatedObjectIdentifierValue>DMD_0001</premis:relatedObjectIdentifierValue>
+                    </premis:relatedObjectIdentification>
+                </premis:relationship>
+                <mets:embeddedContent>
+                    <mets:binaryData>AAAABBBBCCCC</mets:binaryData>
+                </mets:embeddedContent>
+            </premis:object>
+        </mets:objectGroup>
+        <mets:objectGroup>
+            <mets:objectGroupUse>HI-RES COPY</mets:objectGroupUse>
+            <mets:objectGroupStatus>APPROVED</mets:objectGroupStatus>
+            <premis:object xsi:type="premis:file">
+                <premis:objectIdentifier>
+                    <premis:objectIdentifierType>LOCAL</premis:objectIdentifierType>
+                    <premis:objectIdentifierValue>OBJ_0002</premis:objectIdentifierValue>
+                </premis:objectIdentifier>
+                <premis:objectCharacteristics>
+                    <premis:compositionLevel>0</premis:compositionLevel>
+                    <premis:fixity>
+                        <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+                        <premis:messageDigest>abcdef1234567890</premis:messageDigest>
+                    </premis:fixity>
+                    <premis:format>
+                        <premis:formatDesignation>
+                            <premis:formatName>image/jpeg</premis:formatName>
+                        </premis:formatDesignation>
+                    </premis:format>
+                </premis:objectCharacteristics>
+                <premis:storage>
+                    <premis:contentLocation>
+                        <premis:contentLocationType>URL</premis:contentLocationType>
+                        <premis:contentLocationValue>http://www.hdwallpapers-desktop.com/wallpaper/wp-content/uploads/2012/10/09/1934/Albert-Einstein-Wallpaper-scientist-physicist-theorist-face-tongue.jpg</premis:contentLocationValue>
+                    </premis:contentLocation>
+                </premis:storage>
+                <premis:relationship>
+                    <premis:relationshipType>METADATA</premis:relationshipType>
+                    <premis:relationshipSubType>DESCRIPTIVE</premis:relationshipSubType>
+                    <premis:relatedObjectIdentification>
+                        <premis:relatedObjectIdentifierType>LOCAL</premis:relatedObjectIdentifierType>
+                        <premis:relatedObjectIdentifierValue>DMD_0001</premis:relatedObjectIdentifierValue>
+                    </premis:relatedObjectIdentification>
+                </premis:relationship>
+            </premis:object>
+        </mets:objectGroup>
+    </mets:objectGroup>
+    <mets:objectGroup>
+        <mets:objectGroupUse>DESCRIPTIVE METADATA</mets:objectGroupUse>
         <premis:object xsi:type="premis:file">
             <premis:objectIdentifier>
-                <premis:objectIdentifierType></premis:objectIdentifierType>
-                <premis:objectIdentifierValue></premis:objectIdentifierValue>
+                <premis:objectIdentifierType>LOCAL</premis:objectIdentifierType>
+                <premis:objectIdentifierValue>DMD_0001</premis:objectIdentifierValue>
             </premis:objectIdentifier>
             <premis:objectCharacteristics>
                 <premis:compositionLevel>0</premis:compositionLevel>
                 <premis:format>
                     <premis:formatDesignation>
-                        <premis:formatName></premis:formatName>
+                        <premis:formatName>text/xml</premis:formatName>
                     </premis:formatDesignation>
                 </premis:format>
             </premis:objectCharacteristics>
-            <premis:storage>
-                <premis:contentLocation>
-                    <premis:contentLocationType></premis:contentLocationType>
-                    <premis:contentLocationValue></premis:contentLocationValue>
-                </premis:contentLocation>
-            </premis:storage>
-            <mets:objectUse></mets:objectUse>
-            <mets:objectStatus></mets:objectStatus>
-            <mets:objectSequence>1</mets:objectSequence>
+            <mets:objectUse>MODS</mets:objectUse>
             <mets:embeddedContent>
-                <mets:binaryData></mets:binaryData>
+                <mets:xmlData>
+                    <mods xmlns:xlink="http://www.w3.org/1999/xlink" version="3.4"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/mods/v3"
+                        xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+                        <titleInfo>
+                            <title>Einstein tongue</title>
+                         </titleInfo>
+                        <name type="personal" >
+                            <namePart>Sasse, Arthur</namePart>
+                            <role>
+                                <roleTerm type="text">photographer</roleTerm>
+                            </role>
+                        </name>
+                        <typeOfResource>photograph</typeOfResource>
+                        <originInfo>
+                            <dateCreated>1951-03-14</dateCreated>
+                        </originInfo>
+                        <abstract>Albert Einstein famously sticks his tongue out for a photographer.</abstract>
+                        <subject>
+                            <name><namePart>Einstein, Albert</namePart></name>
+                        </subject>
+                    </mods>
+                </mets:xmlData>
             </mets:embeddedContent>
         </premis:object>
-        <mets:objectGroup>
-            <mets:objectGroupSequence>1</mets:objectGroupSequence>
-            <mets:objectGroup>
-                <premis:object xsi:type="premis:representation">
-                    <premis:objectIdentifier>
-                        <premis:objectIdentifierType></premis:objectIdentifierType>
-                        <premis:objectIdentifierValue></premis:objectIdentifierValue>
-                    </premis:objectIdentifier>
-                </premis:object>
-            </mets:objectGroup>
-        </mets:objectGroup>
-        <premis:object xsi:type="premis:file">
-            <premis:objectIdentifier>
-                <premis:objectIdentifierType></premis:objectIdentifierType>
-                <premis:objectIdentifierValue></premis:objectIdentifierValue>
-            </premis:objectIdentifier>
-            <premis:objectCharacteristics>
-                <premis:compositionLevel>0</premis:compositionLevel>
-                <premis:format>
-                    <premis:formatDesignation>
-                        <premis:formatName></premis:formatName>
-                    </premis:formatDesignation>
-                </premis:format>
-            </premis:objectCharacteristics>
-        </premis:object>
     </mets:objectGroup>
+    <premis:event>
+        <premis:eventIdentifier>
+            <premis:eventIdentifierType>LOCAL</premis:eventIdentifierType>
+            <premis:eventIdentifierValue>EVT_0001</premis:eventIdentifierValue>
+        </premis:eventIdentifier>
+        <premis:eventType>METS_FILE_CREATED</premis:eventType>
+        <premis:eventDateTime>2013-02-20T15:57:01Z</premis:eventDateTime>
+    </premis:event>
 </mets:mets>

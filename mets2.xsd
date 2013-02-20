@@ -43,6 +43,9 @@
         <xs:sequence>
             <xs:element ref="header" minOccurs="1" maxOccurs="1"/>
             <xs:element ref="objectGroup" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="premis:event" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="premis:agent" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="premis:rights" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     
