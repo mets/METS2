@@ -14,19 +14,19 @@
 
     <xs:annotation>
         <xs:documentation > 
-            PREMIS Redefined: PREMIS XML Schema Redefined for Use with METS 2 
+            PREMIS METS Extensions: PREMIS XML Schema Redefinitions for Use with METS 2 
             Copyright © 2013 Digital Library Federation 
             January, 2013 Version 2.0 
             This is the 2.x version of Premis Redefined for use with METS 2.x . 
         </xs:documentation>
         <xs:documentation>
-            "PREMIS Redefined" by Digital Library Federation
+            "PREMIS METS Extensions" by Digital Library Federation
             
             To the extent possible under law, the person who associated CC0 with
             METS 2 has waived all copyright and related or neighboring rights
             to METS 2.
             
-            You should have received a copy of the CC0 legalcode along with this
+            You should have received a copy of the CC0 legal code along with this
             work.  If not, see &lt;http://creativecommons.org/publicdomain/zero/1.0/&gt;.
         </xs:documentation>
     </xs:annotation>
@@ -38,34 +38,21 @@
                     <xs:annotation >
                         <xs:documentation >
                             The PREMIS file type is being extended to append some elements from the METS namespace, including the ability to 
-                            point to the location of the file or to 
+                            embed the file in the XML document.  The mets:embeddedContent element is equivalent to the original METS FContent element.
+                            To point to external file content use the premis:storage element which is equivalenet to the original METS FLocat element.
                         </xs:documentation>
                     </xs:annotation>
                     <xs:sequence>
                         <xs:element ref="mets:objectUse" minOccurs="0" maxOccurs="1"/>
                         <xs:element ref="mets:objectStatus" minOccurs="0" maxOccurs="1"/>
                         <xs:element ref="mets:objectSequence" minOccurs="0" maxOccurs="1"/>
-                        <xs:choice minOccurs="0" maxOccurs="unbounded">
-                            <xs:element ref="mets:objectLocation" minOccurs="0" maxOccurs="1" >
-                                <xs:annotation>
-                                    <xs:documentation>
-                                        This is points to the location of the file, equivalent to the METS 1 FLocat element.
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element ref="mets:objectContent" minOccurs="0" maxOccurs="1">
-                                <xs:annotation>
-                                    <xs:documentation>
-                                        This embeds the actual file content, equivalent to the METS 1 FContent element.
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>                          
-                        </xs:choice>
+                        <xs:element ref="mets:embeddedContent" minOccurs="0" maxOccurs="unbounded"/>
                     </xs:sequence>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
-    </xs:redefine>
+        
+     </xs:redefine>
     
     
 </xs:schema>

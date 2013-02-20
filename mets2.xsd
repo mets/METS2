@@ -4,9 +4,12 @@
     xmlns:premis="info:lc/xmlns/premis-v2" elementFormDefault="qualified"
     attributeFormDefault="unqualified">
 
+    <!--<xs:import namespace="info:lc/xmlns/premis-v2"
+        schemaLocation="http://www.loc.gov/standards/premis/v2/premis.xsd"/>-->
+    
     <xs:import namespace="info:lc/xmlns/premis-v2"
         schemaLocation="premis_mets_extensions.xsd"/>
-    
+
     <xs:annotation>
         <xs:documentation > 
             METS 2: Metadata Encoding and Transmission Standard Version 2 
@@ -44,54 +47,11 @@
     </xs:complexType>
     
     
-    <xs:element name="objectGroup" type="objectGroupComplexType"/>
-    <xs:complexType name="objectGroupComplexType">
-        <xs:annotation>
-            <xs:documentation>All the information entities packaged within the METS file are organized and contained in a objectGroup elements.</xs:documentation>
-        </xs:annotation>
-        <xs:sequence>
-            <xs:element ref="objectGroupIdentifier"  minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element ref="objectGroupUse" minOccurs="0" maxOccurs="1"/>
-            <xs:element ref="objectGroupStatus" minOccurs="0" maxOccurs="1"/>
-            <xs:element ref="objectGroupSequence" minOccurs="0" maxOccurs="1"/>
-            <xs:sequence maxOccurs="unbounded" minOccurs="0"  >
-                <xs:element ref="objectGroup" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element ref="premis:object" minOccurs="0" maxOccurs="unbounded"/>
-            </xs:sequence>          
-            <xs:element ref="premis:linkingEventIdentifier" minOccurs="0" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:complexType>
-    
-    <xs:element name="objectGroupIdentifier" type="objectGroupIdentifierComplexType"/>
-    <xs:complexType name="objectGroupIdentifierComplexType">
-        <xs:sequence minOccurs="1" maxOccurs="1">
-            <xs:element ref="objectGroupIdentifierType"/>
-            <xs:element ref="objectGroupIdentifierValue"/>
-        </xs:sequence>
-    </xs:complexType>
-    
-    <xs:element name="objectLocation" type="objectLocationComplexType"/>
-    <xs:complexType name="objectLocationComplexType">
-        <xs:sequence minOccurs="1" maxOccurs="1">
-            <xs:element ref="objectLocationType"/>
-            <xs:element ref="objectLocationValue"/>
-        </xs:sequence>
-    </xs:complexType>
-    
-    <xs:element name="objectContent" type="objectContentComplexType"/>
-    <xs:complexType name="objectContentComplexType">
-        <xs:choice minOccurs="1" maxOccurs="1">
-            <xs:element ref="binaryData"/>
-            <xs:element ref="xmlData"/>
-            <xs:element ref="textData"/>
-        </xs:choice>
-    </xs:complexType>
-    
     <xs:element name="header" type="metsHeaderComplexType"/>
     <xs:complexType name="metsHeaderComplexType">
         <xs:annotation>
             <xs:documentation>One issue is differentiating properties that apply to the intellectual entity versus 
-            properties that apply to METS XML document.</xs:documentation>
+                properties that apply to METS XML document.</xs:documentation>
         </xs:annotation>
         <xs:sequence>
             <xs:element ref="intellectualEntityLabel" minOccurs="0" maxOccurs="1"/>
@@ -101,7 +61,7 @@
             <xs:element ref="metsProfile" minOccurs="0" maxOccurs="1"/>
             
             <xs:element ref="metsUse" minOccurs="0" maxOccurs="1"/>
-
+            
             <xs:element ref="metsStatus" minOccurs="0" maxOccurs="1"/>
             
             <xs:element ref="premis:linkingIntellectualEntityIdentifier" minOccurs="0"
@@ -148,6 +108,42 @@
         </xs:sequence>
     </xs:complexType>
 
+    <xs:element name="objectGroup" type="objectGroupComplexType"/>
+    <xs:complexType name="objectGroupComplexType">
+        <xs:annotation>
+            <xs:documentation>All the information entities packaged within the METS file are organized and contained in a objectGroup elements.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element ref="objectGroupIdentifier"  minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="objectGroupUse" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="objectGroupStatus" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="objectGroupSequence" minOccurs="0" maxOccurs="1"/>
+            <xs:sequence maxOccurs="unbounded" minOccurs="0"  >
+                <xs:element ref="objectGroup" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="premis:object" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>          
+            <xs:element ref="premis:linkingEventIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="objectGroupIdentifier" type="objectGroupIdentifierComplexType"/>
+    <xs:complexType name="objectGroupIdentifierComplexType">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element ref="objectGroupIdentifierType"/>
+            <xs:element ref="objectGroupIdentifierValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="embeddedContent" type="objectContentComplexType"/>
+    <xs:complexType name="objectContentComplexType">
+        <xs:choice minOccurs="1" maxOccurs="1">
+            <xs:element ref="binaryData"/>
+            <xs:element ref="xmlData"/>
+            <xs:element ref="textData"/>
+        </xs:choice>
+    </xs:complexType>
+    
+
     <xs:element name="intellectualEntityLabel" type="xs:string"/>
     <xs:element name="intellectualEntityType" type="xs:string"/>
     <xs:element name="metsProfile" type="xs:string"/>
@@ -163,8 +159,6 @@
     <xs:element name="objectStatus" type="xs:string"/>
     <xs:element name="objectUse" type="xs:string"/>
     <xs:element name="objectSequence" type="xs:int"/>
-    <xs:element name="objectLocationType" type="xs:string"/>
-    <xs:element name="objectLocationValue" type="xs:string"/>
     
     <xs:element name="binaryData" type="xs:base64Binary"/>
     <xs:element name="textData" type="xs:string"/>
@@ -176,4 +170,40 @@
         </xs:complexType>
     </xs:element>
 
+<!--
+        <xs:complexType name="file">
+        <xs:complexContent>
+            <xs:extension base="premis:objectComplexType">
+                <xs:annotation>
+                    <xs:documentation>
+                        The PREMIS abstract object type is being extended to insert some elements from the METS namespace, including the ability  
+                        embed the file using mets:embeddedContent which is equivalent to the METS 1 FContent element. 
+                        The premis:storage element is used to point to the content; it is equivalent to the Mets FLocat elements.
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:sequence>
+                    <xs:element ref="objectUse" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="objectStatus" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="objectSequence" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="premis:objectIdentifier" maxOccurs="unbounded"/>
+                    <xs:element ref="premis:preservationLevel" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="premis:significantProperties" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="premis:objectCharacteristics" maxOccurs="unbounded"/>
+                    <xs:element ref="premis:originalName" minOccurs="0"/>
+                    <xs:element ref="premis:storage" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="embeddedContent" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="premis:environment" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="premis:signatureInformation" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="premis:relationship" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="premis:linkingEventIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="premis:linkingIntellectualEntityIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="premis:linkingRightsStatementIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:attribute name="xmlID" type="xs:ID"/>
+                <xs:attribute name="version" type="premis:versionSimpleType"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+-->
+    
 </xs:schema>

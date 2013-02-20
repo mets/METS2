@@ -3,6 +3,7 @@
     xmlns:premis="info:lc/xmlns/premis-v2" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.loc.gov/METS2/ mets2.xsd">
+    
     <mets:header>
         <mets:intellectualEntityLabel></mets:intellectualEntityLabel>
         <mets:intellectualEntityType></mets:intellectualEntityType>
@@ -47,20 +48,18 @@
                     </premis:formatDesignation>
                 </premis:format>
             </premis:objectCharacteristics>
+            <premis:storage>
+                <premis:contentLocation>
+                    <premis:contentLocationType></premis:contentLocationType>
+                    <premis:contentLocationValue></premis:contentLocationValue>
+                </premis:contentLocation>
+            </premis:storage>
             <mets:objectUse></mets:objectUse>
             <mets:objectStatus></mets:objectStatus>
             <mets:objectSequence>1</mets:objectSequence>
-            <mets:objectLocation>
-                <mets:objectLocationType></mets:objectLocationType>
-                <mets:objectLocationValue></mets:objectLocationValue>
-            </mets:objectLocation>
-            <mets:objectContent>
+            <mets:embeddedContent>
                 <mets:binaryData></mets:binaryData>
-            </mets:objectContent>
-            <mets:objectLocation>
-                <mets:objectLocationType></mets:objectLocationType>
-                <mets:objectLocationValue></mets:objectLocationValue>
-            </mets:objectLocation>
+            </mets:embeddedContent>
         </premis:object>
         <mets:objectGroup>
             <mets:objectGroupSequence>1</mets:objectGroupSequence>
