@@ -57,7 +57,7 @@
                     </premis:contentLocation>
                 </premis:storage>
                 <premis:relationship>
-                    <premis:relationshipType>METADATA</premis:relationshipType>
+                    <premis:relationshipType>HAS_METADATA</premis:relationshipType>
                     <premis:relationshipSubType>DESCRIPTIVE</premis:relationshipSubType>
                     <premis:relatedObjectIdentification>
                         <premis:relatedObjectIdentifierType>LOCAL</premis:relatedObjectIdentifierType>
