@@ -4,9 +4,6 @@
     xmlns:premis="info:lc/xmlns/premis-v2" elementFormDefault="qualified"
     attributeFormDefault="unqualified">
 
-    <!--<xs:import namespace="info:lc/xmlns/premis-v2"
-        schemaLocation="http://www.loc.gov/standards/premis/v2/premis.xsd"/>-->
-    
     <xs:import namespace="info:lc/xmlns/premis-v2"
         schemaLocation="premis_mets_extensions.xsd"/>
 
@@ -26,7 +23,7 @@
             METS 2 has waived all copyright and related or neighboring rights
             to METS 2.
                    
-            You should have received a copy of the CC0 legalcode along with this
+            You should have received a copy of the CC0 legal code along with this
             work.  If not, see &lt;http://creativecommons.org/publicdomain/zero/1.0/&gt;.
         </xs:documentation>
     </xs:annotation>
@@ -47,6 +44,7 @@
             <xs:element ref="premis:agent" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="premis:rights" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
+        <xs:attribute name="version" type="versionSimpleType" use="required"/>      
     </xs:complexType>
     
     
@@ -172,9 +170,20 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    
+    <xs:simpleType name="versionSimpleType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="2.0"/>
+            <!-- add to enumeration as new versions are released -->
+        </xs:restriction>
+    </xs:simpleType>
+    
 
 <!--
-        <xs:complexType name="file">
+        <xs:import namespace="info:lc/xmlns/premis-v2"
+        schemaLocation="http://www.loc.gov/standards/premis/v2/premis.xsd"/>
+    
+    <xs:complexType name="file">
         <xs:complexContent>
             <xs:extension base="premis:objectComplexType">
                 <xs:annotation>

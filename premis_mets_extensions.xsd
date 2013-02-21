@@ -17,7 +17,7 @@
             PREMIS METS Extensions: PREMIS XML Schema Redefinitions for Use with METS 2 
             Copyright © 2013 Digital Library Federation 
             January, 2013 Version 2.0 
-            This is the 2.x version of Premis Redefined for use with METS 2.x . 
+            This is the 2.x version of PREMIS METS Extensions for use with METS 2.x . 
         </xs:documentation>
         <xs:documentation>
             "PREMIS METS Extensions" by Digital Library Federation
@@ -37,8 +37,8 @@
                 <xs:extension base="file">
                     <xs:annotation >
                         <xs:documentation >
-                            The PREMIS file type is being extended to append some elements from the METS namespace, including the ability to 
-                            embed the file in the XML document.  The mets:embeddedContent element is equivalent to the original METS FContent element.
+                            The PREMIS file type is being extended to append some elements from the METS namespace, such as USE, STATUS, SEQ, and including the ability to 
+                            embed the file itself in the XML document.  The mets:embeddedContent element is equivalent to the original METS FContent element.
                             To point to external file content use the premis:storage element which is equivalenet to the original METS FLocat element.
                         </xs:documentation>
                     </xs:annotation>
