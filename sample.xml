@@ -3,7 +3,7 @@
     xmlns:premis="info:lc/xmlns/premis-v2" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.loc.gov/METS2/ mets2.xsd"
-    version="2.0">
+    version="2.0" >
     
     <mets:header>
         <mets:intellectualEntityLabel>Einstein's Tongue</mets:intellectualEntityLabel>
@@ -34,7 +34,7 @@
         <mets:objectGroup>
             <mets:objectGroupUse>LO-RES COPY</mets:objectGroupUse>
             <mets:objectGroupStatus>APPROVED</mets:objectGroupStatus>
-            <premis:object xsi:type="premis:file">
+            <premis:object xsi:type="premis:file" version="2.2" metsExtension="2.0">
                 <premis:objectIdentifier>
                     <premis:objectIdentifierType>LOCAL</premis:objectIdentifierType>
                     <premis:objectIdentifierValue>OBJ_0001</premis:objectIdentifierValue>
@@ -73,7 +73,7 @@
         <mets:objectGroup>
             <mets:objectGroupUse>HI-RES COPY</mets:objectGroupUse>
             <mets:objectGroupStatus>APPROVED</mets:objectGroupStatus>
-            <premis:object xsi:type="premis:file">
+            <premis:object xsi:type="premis:file" version="2.2" metsExtension="2.0">
                 <premis:objectIdentifier>
                     <premis:objectIdentifierType>LOCAL</premis:objectIdentifierType>
                     <premis:objectIdentifierValue>OBJ_0002</premis:objectIdentifierValue>
@@ -109,7 +109,7 @@
     </mets:objectGroup>
     <mets:objectGroup>
         <mets:objectGroupUse>DESCRIPTIVE METADATA</mets:objectGroupUse>
-        <premis:object xsi:type="premis:file">
+        <premis:object xsi:type="premis:file" version="2.2" metsExtension="2.0">
             <premis:objectIdentifier>
                 <premis:objectIdentifierType>LOCAL</premis:objectIdentifierType>
                 <premis:objectIdentifierValue>DMD_0001</premis:objectIdentifierValue>
@@ -137,7 +137,7 @@
                                 <roleTerm type="text">photographer</roleTerm>
                             </role>
                         </name>
-                        <typeOfResource>photograph</typeOfResource>
+                        <typeOfResource>still image</typeOfResource>
                         <originInfo>
                             <dateCreated>1951-03-14</dateCreated>
                         </originInfo>
@@ -150,7 +150,7 @@
             </mets:embeddedContent>
         </premis:object>
     </mets:objectGroup>
-    <premis:event>
+    <premis:event version="2.2" >
         <premis:eventIdentifier>
             <premis:eventIdentifierType>LOCAL</premis:eventIdentifierType>
             <premis:eventIdentifierValue>EVT_0001</premis:eventIdentifierValue>

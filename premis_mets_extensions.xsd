@@ -48,6 +48,7 @@
                         <xs:element ref="mets:objectSequence" minOccurs="0" maxOccurs="1"/>
                         <xs:element ref="mets:embeddedContent" minOccurs="0" maxOccurs="unbounded"/>
                     </xs:sequence>
+                    <xs:attribute name="metsExtension" type="mets:versionSimpleType" use="required"/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>

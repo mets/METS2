@@ -44,7 +44,7 @@
             <xs:element ref="premis:agent" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="premis:rights" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
-        <xs:attribute name="version" type="versionSimpleType" use="required"/>      
+        <xs:attribute name="version" type="versionSimpleType" use="required"/>        
     </xs:complexType>
     
     
