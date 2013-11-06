@@ -122,6 +122,10 @@
                     </premis:formatDesignation>
                 </premis:format>
             </premis:objectCharacteristics>
+            <premis:linkingEventIdentifier>
+                <premis:linkingEventIdentifierType>LOCAL</premis:linkingEventIdentifierType>
+                <premis:linkingEventIdentifierValue>EVT_0002</premis:linkingEventIdentifierValue>
+            </premis:linkingEventIdentifier>
             <mets:objectUse>MODS</mets:objectUse>
             <mets:embeddedContent>
                 <mets:xmlData>
@@ -196,4 +200,13 @@
         <premis:eventType>METS_FILE_CREATED</premis:eventType>
         <premis:eventDateTime>2013-02-20T15:57:01Z</premis:eventDateTime>
     </premis:event>
+    <premis:event version="2.2" >
+        <premis:eventIdentifier>
+            <premis:eventIdentifierType>LOCAL</premis:eventIdentifierType>
+            <premis:eventIdentifierValue>EVT_0002</premis:eventIdentifierValue>
+        </premis:eventIdentifier>
+        <premis:eventType>MODS_FILE_CREATED</premis:eventType>
+        <premis:eventDateTime>2012-11-20T15:57:01Z</premis:eventDateTime>
+    </premis:event>
+    
 </mets:mets>
