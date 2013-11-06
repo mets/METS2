@@ -34,7 +34,7 @@
         <mets:objectGroup>
             <mets:objectGroupUse>LO-RES COPY</mets:objectGroupUse>
             <mets:objectGroupStatus>APPROVED</mets:objectGroupStatus>
-            <premis:object xsi:type="premis:file" version="2.2" metsExtension="2.0">
+            <mets:file version="2.2" metsExtension="2.0">
                 <premis:objectIdentifier>
                     <premis:objectIdentifierType>LOCAL</premis:objectIdentifierType>
                     <premis:objectIdentifierValue>OBJ_0001</premis:objectIdentifierValue>
@@ -68,12 +68,12 @@
                 <mets:embeddedContent>
                     <mets:binaryData>AAAABBBBCCCC</mets:binaryData>
                 </mets:embeddedContent>
-            </premis:object>
+            </mets:file>
         </mets:objectGroup>
         <mets:objectGroup>
             <mets:objectGroupUse>HI-RES COPY</mets:objectGroupUse>
             <mets:objectGroupStatus>APPROVED</mets:objectGroupStatus>
-            <premis:object xsi:type="premis:file" version="2.2" metsExtension="2.0">
+            <mets:file version="2.2" metsExtension="2.0">
                 <premis:objectIdentifier>
                     <premis:objectIdentifierType>LOCAL</premis:objectIdentifierType>
                     <premis:objectIdentifierValue>OBJ_0002</premis:objectIdentifierValue>
@@ -104,12 +104,12 @@
                         <premis:relatedObjectIdentifierValue>DMD_0001</premis:relatedObjectIdentifierValue>
                     </premis:relatedObjectIdentification>
                 </premis:relationship>
-            </premis:object>
+            </mets:file>
         </mets:objectGroup>
     </mets:objectGroup>
     <mets:objectGroup>
         <mets:objectGroupUse>DESCRIPTIVE METADATA</mets:objectGroupUse>
-        <premis:object xsi:type="premis:file" version="2.2" metsExtension="2.0">
+        <mets:file version="2.2" metsExtension="2.0">
             <premis:objectIdentifier>
                 <premis:objectIdentifierType>LOCAL</premis:objectIdentifierType>
                 <premis:objectIdentifierValue>DMD_0001</premis:objectIdentifierValue>
@@ -152,7 +152,7 @@
                     </mods>
                 </mets:xmlData>
             </mets:embeddedContent>
-        </premis:object>
+        </mets:file>
     </mets:objectGroup>
     <mets:objectGroup>
         <mets:objectGroupUse>LOGICAL STRUCTURE MAP</mets:objectGroupUse>

@@ -123,8 +123,8 @@
             <xs:sequence maxOccurs="unbounded" minOccurs="0"  >
                 <xs:element ref="objectGroup" minOccurs="0" maxOccurs="unbounded"/>
                 <xs:choice >
-                    <xs:element ref="premis:object" minOccurs="0" maxOccurs="unbounded"/>
-                    <xs:element ref="file" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="file" minOccurs="0" maxOccurs="unbounded" type="premis:file"/>
+                    <xs:element ref="filePointer" minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element ref="filePart" minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element ref="filesParallel"  minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element ref="filesSequential"  minOccurs="0" maxOccurs="unbounded"/>
@@ -138,7 +138,7 @@
     <xs:complexType name="parallelFilesComplexType">
         <xs:choice minOccurs="1" maxOccurs="unbounded">
             <xs:element ref="filesSequential" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element ref="file" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="filePointer" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="filePart" minOccurs="0" maxOccurs="unbounded"/>
         </xs:choice>
     </xs:complexType>
@@ -147,12 +147,12 @@
     <xs:complexType name="sequentialFilesComplexType">
         <xs:choice minOccurs="1" maxOccurs="unbounded">
             <xs:element ref="filesParallel" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element ref="file" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="filePointer" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="filePart" minOccurs="0" maxOccurs="unbounded"/>
         </xs:choice>
     </xs:complexType>
     
-    <xs:element name="file" type="fileComplexType"/>
+    <xs:element name="filePointer" type="fileComplexType"/>
     <xs:complexType name="fileComplexType">
         <xs:sequence>
             <xs:element ref="premis:linkingObjectIdentifier" minOccurs="1" maxOccurs="1"/>
