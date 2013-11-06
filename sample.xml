@@ -150,6 +150,44 @@
             </mets:embeddedContent>
         </premis:object>
     </mets:objectGroup>
+    <mets:objectGroup>
+        <mets:objectGroupUse>LOGICAL STRUCTURE MAP</mets:objectGroupUse>
+        <mets:objectGroup>
+            <mets:objectGroupLabel>Tongue Close Up</mets:objectGroupLabel>
+            <mets:filePart>
+                <premis:linkingObjectIdentifier>
+                    <premis:linkingObjectIdentifierType>LOCAL</premis:linkingObjectIdentifierType>
+                    <premis:linkingObjectIdentifierValue>OBJ_0002</premis:linkingObjectIdentifierValue>
+                </premis:linkingObjectIdentifier>
+                <mets:rectangle>
+                    <mets:topLeft>
+                        <mets:x>100</mets:x>
+                        <mets:y>100</mets:y>
+                    </mets:topLeft>
+                    <mets:bottomRight>
+                        <mets:x>300</mets:x>
+                        <mets:y>400</mets:y>
+                    </mets:bottomRight>
+                </mets:rectangle>
+            </mets:filePart>
+        </mets:objectGroup>
+        <mets:objectGroup>
+            <mets:objectGroupLabel>Left Eye</mets:objectGroupLabel>
+            <mets:filePart>
+                <premis:linkingObjectIdentifier>
+                    <premis:linkingObjectIdentifierType>LOCAL</premis:linkingObjectIdentifierType>
+                    <premis:linkingObjectIdentifierValue>OBJ_0002</premis:linkingObjectIdentifierValue>
+                </premis:linkingObjectIdentifier>
+                <mets:circle>
+                    <mets:center>
+                        <mets:x>20</mets:x>
+                        <mets:y>30</mets:y>
+                    </mets:center>
+                    <mets:radius>20</mets:radius>
+                </mets:circle>
+            </mets:filePart>
+        </mets:objectGroup>
+    </mets:objectGroup>
     <premis:event version="2.2" >
         <premis:eventIdentifier>
             <premis:eventIdentifierType>LOCAL</premis:eventIdentifierType>

@@ -119,19 +119,149 @@
             <xs:element ref="objectGroupUse" minOccurs="0" maxOccurs="1"/>
             <xs:element ref="objectGroupStatus" minOccurs="0" maxOccurs="1"/>
             <xs:element ref="objectGroupSequence" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="objectGroupLabel" minOccurs="0" maxOccurs="1"/>
             <xs:sequence maxOccurs="unbounded" minOccurs="0"  >
                 <xs:element ref="objectGroup" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element ref="premis:object" minOccurs="0" maxOccurs="unbounded"/>
-            </xs:sequence>          
+                <xs:choice >
+                    <xs:element ref="premis:object" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="file" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="filePart" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="filesParallel"  minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="filesSequential"  minOccurs="0" maxOccurs="unbounded"/>
+                </xs:choice>
+            </xs:sequence>  
             <xs:element ref="premis:linkingEventIdentifier" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     
+    <xs:element name="filesParallel" type="parallelFilesComplexType"/>
+    <xs:complexType name="parallelFilesComplexType">
+        <xs:choice minOccurs="1" maxOccurs="unbounded">
+            <xs:element ref="filesSequential" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="file" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="filePart" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:choice>
+    </xs:complexType>
+    
+    <xs:element name="filesSequential" type="sequentialFilesComplexType"/>
+    <xs:complexType name="sequentialFilesComplexType">
+        <xs:choice minOccurs="1" maxOccurs="unbounded">
+            <xs:element ref="filesParallel" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="file" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="filePart" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:choice>
+    </xs:complexType>
+    
+    <xs:element name="file" type="fileComplexType"/>
+    <xs:complexType name="fileComplexType">
+        <xs:sequence>
+            <xs:element ref="premis:linkingObjectIdentifier" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="filePart" type="partOfFileComplexType"/>
+    <xs:complexType name="partOfFileComplexType">
+        <xs:sequence>
+            <xs:element ref="premis:linkingObjectIdentifier" minOccurs="1" maxOccurs="1"/>
+            <xs:choice minOccurs="0" maxOccurs="1">
+                <xs:element ref="circle"/>
+                <xs:element ref="rectangle"/>
+                <xs:element ref="polygon"/>
+            </xs:choice>
+            <xs:element ref="begin" maxOccurs="1" minOccurs="0"/>
+            <xs:choice minOccurs="0" maxOccurs="1">
+                <xs:element ref="end"/>
+                <xs:element ref="extent"/>
+            </xs:choice>
+            <xs:element name="partExtension" maxOccurs="1" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:any namespace="##other" processContents="lax"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element ref="partOfFileIdentifier" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="begin" type="beginEndComplexType"/>
+    <xs:element name="end" type="beginEndComplexType"/>
+    <xs:element name="extent" type="extentComplexType"/>
+    
+    <xs:complexType name="extentComplexType">
+        <xs:choice>
+            <xs:element name="byte"/>
+            <xs:element name="smil"/>
+            <xs:element name="midi"/>
+            <xs:element name="smpte-25"/>
+            <xs:element name="smpte-24"/>
+            <xs:element name="smpte-df30"/>
+            <xs:element name="smpte-ndf30"/>
+            <xs:element name="smpte-df29.97"/>
+            <xs:element name="smpte-ndf29.97"/>
+            <xs:element name="time"/>
+            <xs:element name="tcf"/>
+        </xs:choice>
+    </xs:complexType>
+        
+    <xs:complexType name="beginEndComplexType">
+        <xs:complexContent>
+            <xs:extension base="extentComplexType">
+                <xs:choice>
+                    <xs:element name="idref"/>
+                    <xs:element name="xptr"/>
+                </xs:choice>
+            </xs:extension>
+        </xs:complexContent>
+        
+    </xs:complexType>
+
+    <xs:element name="circle">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="center" type="pointComplexType" />
+                <xs:element name="radius" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="rectangle">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="topLeft" type="pointComplexType" />
+                <xs:element name="bottomRight" type="pointComplexType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="polygon">
+        <xs:complexType>
+            <xs:sequence minOccurs="3" maxOccurs="unbounded">
+                <xs:element name="point" type="pointComplexType" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="pointComplexType">
+        <xs:sequence>
+            <xs:element name="x" type="xs:double"/>
+            <xs:element name="y" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <xs:element name="objectGroupIdentifier" type="objectGroupIdentifierComplexType"/>
     <xs:complexType name="objectGroupIdentifierComplexType">
         <xs:sequence minOccurs="1" maxOccurs="1">
             <xs:element ref="objectGroupIdentifierType"/>
             <xs:element ref="objectGroupIdentifierValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="partOfFileIdentifier" type="partOfFileIdentifierComplexType"/>
+    <xs:complexType name="partOfFileIdentifierComplexType">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element ref="partOfFileIdentifierType"/>
+            <xs:element ref="partOfFileIdentifierValue"/>
         </xs:sequence>
     </xs:complexType>
     
@@ -145,6 +275,9 @@
     </xs:complexType>
     
 
+    <xs:element name="partOfFileIdentifierType" type="xs:string"/>
+    <xs:element name="partOfFileIdentifierValue" type="xs:string"/>
+
     <xs:element name="intellectualEntityLabel" type="xs:string"/>
     <xs:element name="intellectualEntityType" type="xs:string"/>
     <xs:element name="metsProfile" type="xs:string"/>
@@ -156,6 +289,7 @@
     <xs:element name="objectGroupStatus" type="xs:string"/>
     <xs:element name="objectGroupUse" type="xs:string"/>
     <xs:element name="objectGroupSequence" type="xs:int"/>
+    <xs:element name="objectGroupLabel" type="xs:string"/>
     
     <xs:element name="objectStatus" type="xs:string"/>
     <xs:element name="objectUse" type="xs:string"/>
