@@ -157,7 +157,7 @@
     <mets:objectGroup>
         <mets:objectGroupUse>LOGICAL STRUCTURE MAP</mets:objectGroupUse>
         <mets:objectGroup>
-            <mets:objectGroupLabel>Tongue Close Up</mets:objectGroupLabel>
+            <mets:objectGroupLabel>Tongue</mets:objectGroupLabel>
             <mets:filePart>
                 <premis:linkingObjectIdentifier>
                     <premis:linkingObjectIdentifierType>LOCAL</premis:linkingObjectIdentifierType>
@@ -185,6 +185,22 @@
                 <mets:circle>
                     <mets:center>
                         <mets:x>20</mets:x>
+                        <mets:y>30</mets:y>
+                    </mets:center>
+                    <mets:radius>20</mets:radius>
+                </mets:circle>
+            </mets:filePart>
+        </mets:objectGroup>
+        <mets:objectGroup>
+            <mets:objectGroupLabel>Right Eye</mets:objectGroupLabel>
+            <mets:filePart>
+                <premis:linkingObjectIdentifier>
+                    <premis:linkingObjectIdentifierType>LOCAL</premis:linkingObjectIdentifierType>
+                    <premis:linkingObjectIdentifierValue>OBJ_0002</premis:linkingObjectIdentifierValue>
+                </premis:linkingObjectIdentifier>
+                <mets:circle>
+                    <mets:center>
+                        <mets:x>80</mets:x>
                         <mets:y>30</mets:y>
                     </mets:center>
                     <mets:radius>20</mets:radius>
