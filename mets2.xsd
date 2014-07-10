@@ -317,6 +317,9 @@
         <xs:import namespace="info:lc/xmlns/premis-v2"
         schemaLocation="http://www.loc.gov/standards/premis/v2/premis.xsd"/>
     
+    Decided against this approach because it makes the mets:file type potentially incompatible with the premis:file type.
+    Instead the premis:file is extended in a compatible way in the premis_mets_extensions.xsd
+    
     <xs:complexType name="file">
         <xs:complexContent>
             <xs:extension base="premis:objectComplexType">
