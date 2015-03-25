@@ -1,0 +1,48 @@
+<http://.../postcard123.mets> a <mets:MetsDocument> ;
+	<premis:hasEvent> _:creationEvent1 ;  
+	<mets:hasStructuralMap> <http://.../postcard123.mets#div1> .
+
+<http://.../postcard123.mets#div1> a <mets:Division> ;
+	<mets:hasDescriptiveMetadata> <http://.../postcard123.mods> ;
+	<mets:hasPart> <http://.../postcard123.mets#front> ;
+	<mets:hasPart> <http://.../postcard123.mets#back> .
+
+<http://.../postcard123.mets#front> a <mets:Division> ;
+	<mets:hasPart> <http://.../postcard123.mets#frontImage> .
+
+<http://.../postcard123.mets#back> a <mets:Division> ;
+	<mets:hasPart> <http://.../postcard123.mets#backImage> ;
+	<mets:hasPart> <http://.../postcard123.mets#backTranscription> .
+
+<my:hasThumbnailImage> <rdfs:isSubpropertyOf> <mets:hasManifestation> .
+<my:hasHiResImage> <rdfs:isSubpropertyOf> <mets:hasManifestation> .
+
+<http://.../postcard123.mets#frontImage> a <mets:Division> ;
+	<my:hasHiResImage> <http://.../postcard123_front.tif> ;
+	<my:hasThumbnailImage> <http://.../postcard123_front.png> .
+
+
+<http://.../postcard123.mets#backImage> a <mets:Division> ;
+	<my:hasHiResImage> <http://.../postcard123_back.tif> ;
+	<my:hasThumbnailImage> <http://.../postcard123_back.png> .
+
+<http://.../postcard123.mets#backTranscription> a <mets:Division> ;
+	<mets:hasManifestation> <http://.../postcard123_back.txt> .
+
+
+<http://.../postcard123_back.txt> a <mets:File>, <cnt:ContentAsText>  ;
+	<premis:hasObjectCharacteristics> _:characterstics1 ;
+	<cnt:chars> "Dear ... Ernest Hemmingway" .
+
+_:characterstics1 a <premis:ObjectCharacteristics> ;
+	<premis:hasSize> "123" ;
+	<premis:hasFormat> <info:pronom/fmt/353> ;
+	<premis:hasCompositionLevel> "0" ;
+	<premis:hasFixity> _:fixity1 .
+
+_:fixity1 a <premis:Fixity> ;
+	<premis:hasMessageDigestAlgorithm> <http://id.loc.gov/vocabulary/cryptographicHashFunctions/md5> ;
+	<premis:hasMessageDigest> "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" .
+
+_:creationEvent1 a <premis:Event> ;
+	...
