@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<METS:mets xmlns:METS="http://www.loc.gov/METS/" xmlns:EAD="urn:isbn:1-931666-22-9"
+	xmlns:PREMIS="info:lc/xmlns/premis-v2" xmlns:OAI_DC="http://www.openarchives.org/OAI/2.0/oai_dc/"
+	xmlns:DC="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="   http://www.loc.gov/METS/      http://www.loc.gov/standards/mets/mets.xsd   urn:isbn:1-931666-22-9       http://www.loc.gov/ead/ead.xsd   info:lc/xmlns/premis-v2       http://www.loc.gov/premis/premis.xsd   http://www.openarchives.org/OAI/2.0/oai_dc/  http://www.openarchives.org/OAI/2.0/oai_dc.xsd   http://www.w3.org/1999/xlink     http://www.loc.gov/standards/mets/xlink.xsd"
+	PROFILE="http://www.docuteam.ch/xmlns/sip-profile.xml" TYPE="sa_all-formats-01_dss-01">
+	<METS:metsHdr CREATEDATE="2015-05-11T22:45:53" LASTMODDATE="2015-05-11T22:49:23" RECORDSTATUS="New"
+		ADMID="_20150511224553691">
+		<METS:agent ROLE="CREATOR" TYPE="INDIVIDUAL">
+			<METS:name>nef</METS:name>
+		</METS:agent>
+	</METS:metsHdr>
+	<METS:dmdSec ID="_20150511224554063">
+		<METS:mdWrap MDTYPE="EAD">
+			<METS:xmlData>
+				<EAD:ead>
+					<EAD:eadheader>
+						<EAD:eadid/>
+						<EAD:filedesc>
+							<EAD:titlestmt>
+								<EAD:titleproper/>
+							</EAD:titlestmt>
+						</EAD:filedesc>
+					</EAD:eadheader>
+					<EAD:archdesc level="otherlevel">
+						<EAD:did>
+							<EAD:unittitle/>
+						</EAD:did>
+						<EAD:dsc>
+							<EAD:c level="otherlevel" otherlevel="Dossier">
+								<EAD:did>
+									<EAD:unittitle label="main">png</EAD:unittitle>
+									<EAD:physdesc>
+										<EAD:extent>5</EAD:extent>
+										<EAD:physfacet>cm</EAD:physfacet>
+									</EAD:physdesc>
+								</EAD:did>
+								<EAD:dao xlink:role="simple" xlink:href="test:3451"/>
+							</EAD:c>
+						</EAD:dsc>
+					</EAD:archdesc>
+				</EAD:ead>
+			</METS:xmlData>
+		</METS:mdWrap>
+	</METS:dmdSec>
+	<METS:dmdSec ID="_20150511224616281">
+		<METS:mdWrap MDTYPE="EAD">
+			<METS:xmlData>
+				<EAD:ead>
+					<EAD:eadheader>
+						<EAD:eadid/>
+						<EAD:filedesc>
+							<EAD:titlestmt>
+								<EAD:titleproper/>
+							</EAD:titlestmt>
+						</EAD:filedesc>
+					</EAD:eadheader>
+					<EAD:archdesc level="otherlevel">
+						<EAD:did>
+							<EAD:unittitle/>
+						</EAD:did>
+						<EAD:dsc>
+							<EAD:c level="otherlevel" otherlevel="Dokument">
+								<EAD:did>
+									<EAD:unittitle label="main">Bildschirmfoto 2011-01-28 um 22.53.49</EAD:unittitle>
+								</EAD:did>
+								<EAD:dao xlink:role="simple" xlink:href="test:3452"/>
+							</EAD:c>
+						</EAD:dsc>
+					</EAD:archdesc>
+				</EAD:ead>
+			</METS:xmlData>
+		</METS:mdWrap>
+	</METS:dmdSec>
+	<METS:dmdSec ID="_20150511224617114">
+		<METS:mdWrap MDTYPE="EAD">
+			<METS:xmlData>
+				<EAD:ead>
+					<EAD:eadheader>
+						<EAD:eadid/>
+						<EAD:filedesc>
+							<EAD:titlestmt>
+								<EAD:titleproper/>
+							</EAD:titlestmt>
+						</EAD:filedesc>
+					</EAD:eadheader>
+					<EAD:archdesc level="otherlevel">
+						<EAD:did>
+							<EAD:unittitle/>
+						</EAD:did>
+						<EAD:dsc>
+							<EAD:c level="otherlevel" otherlevel="Dokument">
+								<EAD:did>
+									<EAD:unittitle label="main">Bildschirmfoto 2011-01-28 um 22.58.58</EAD:unittitle>
+								</EAD:did>
+								<EAD:dao xlink:role="simple" xlink:href="test:3453"/>
+							</EAD:c>
+						</EAD:dsc>
+					</EAD:archdesc>
+				</EAD:ead>
+			</METS:xmlData>
+		</METS:mdWrap>
+	</METS:dmdSec>
+	<METS:dmdSec ID="_20150511224617668">
+		<METS:mdWrap MDTYPE="EAD">
+			<METS:xmlData>
+				<EAD:ead>
+					<EAD:eadheader>
+						<EAD:eadid/>
+						<EAD:filedesc>
+							<EAD:titlestmt>
+								<EAD:titleproper/>
+							</EAD:titlestmt>
+						</EAD:filedesc>
+					</EAD:eadheader>
+					<EAD:archdesc level="otherlevel">
+						<EAD:did>
+							<EAD:unittitle/>
+						</EAD:did>
+						<EAD:dsc>
+							<EAD:c level="otherlevel" otherlevel="Dokument">
+								<EAD:did>
+									<EAD:unittitle label="main">Bildschirmfoto 2011-01-28 um 23.07.38</EAD:unittitle>
+								</EAD:did>
+								<EAD:dao xlink:role="simple" xlink:href="test:3454"/>
+							</EAD:c>
+						</EAD:dsc>
+					</EAD:archdesc>
+				</EAD:ead>
+			</METS:xmlData>
+		</METS:mdWrap>
+	</METS:dmdSec>
+	<METS:dmdSec ID="_20150511224618012">
+		<METS:mdWrap MDTYPE="EAD">
+			<METS:xmlData>
+				<EAD:ead>
+					<EAD:eadheader>
+						<EAD:eadid/>
+						<EAD:filedesc>
+							<EAD:titlestmt>
+								<EAD:titleproper/>
+							</EAD:titlestmt>
+						</EAD:filedesc>
+					</EAD:eadheader>
+					<EAD:archdesc level="otherlevel">
+						<EAD:did>
+							<EAD:unittitle/>
+						</EAD:did>
+						<EAD:dsc>
+							<EAD:c level="otherlevel" otherlevel="Dokument">
+								<EAD:did>
+									<EAD:unittitle label="main">Bildschirmfoto 2011-01-29 um 13.00.15</EAD:unittitle>
+								</EAD:did>
+								<EAD:dao xlink:role="simple" xlink:href="test:3455"/>
+							</EAD:c>
+						</EAD:dsc>
+					</EAD:archdesc>
+				</EAD:ead>
+			</METS:xmlData>
+		</METS:mdWrap>
+	</METS:dmdSec>
+	<METS:amdSec>
+		<METS:digiprovMD ID="_20150511224553691">
+			<METS:mdWrap MDTYPE="PREMIS">
+				<METS:xmlData>
+					<PREMIS:premis version="2.2">
+						<PREMIS:object xsi:type="PREMIS:representation">
+							<PREMIS:objectIdentifier>
+								<PREMIS:objectIdentifierType>Docuteam</PREMIS:objectIdentifierType>
+								<PREMIS:objectIdentifierValue>_20150511224553871</PREMIS:objectIdentifierValue>
+							</PREMIS:objectIdentifier>
+							<PREMIS:environment>
+								<PREMIS:software>
+									<PREMIS:swName>docuteam darc</PREMIS:swName>
+									<PREMIS:swType>2.14.2</PREMIS:swType>
+								</PREMIS:software>
+							</PREMIS:environment>
+						</PREMIS:object>
+					</PREMIS:premis>
+				</METS:xmlData>
+			</METS:mdWrap>
+		</METS:digiprovMD>
+		<METS:digiprovMD ID="_20150511224554047">
+			<METS:mdWrap MDTYPE="PREMIS">
+				<METS:xmlData>
+					<PREMIS:premis version="2.2">
+						<PREMIS:object xsi:type="PREMIS:representation">
+							<PREMIS:objectIdentifier>
+								<PREMIS:objectIdentifierType>Docuteam</PREMIS:objectIdentifierType>
+								<PREMIS:objectIdentifierValue>_20150511224554049</PREMIS:objectIdentifierValue>
+							</PREMIS:objectIdentifier>
+							<PREMIS:originalName xlink:type="simple">png</PREMIS:originalName>
+						</PREMIS:object>
+						<PREMIS:event>
+							<PREMIS:eventIdentifier>
+								<PREMIS:eventIdentifierType>Docuteam</PREMIS:eventIdentifierType>
+								<PREMIS:eventIdentifierValue>_20150511224554061</PREMIS:eventIdentifierValue>
+							</PREMIS:eventIdentifier>
+							<PREMIS:eventType>Creation</PREMIS:eventType>
+							<PREMIS:eventDateTime>2015-05-11T22:45:54</PREMIS:eventDateTime>
+							<PREMIS:eventDetail>Performed by: 'nef'</PREMIS:eventDetail>
+							<PREMIS:eventOutcomeInformation>
+								<PREMIS:eventOutcome>Success</PREMIS:eventOutcome>
+							</PREMIS:eventOutcomeInformation>
+							<PREMIS:linkingObjectIdentifier xlink:type="simple">
+								<PREMIS:linkingObjectIdentifierType>Docuteam</PREMIS:linkingObjectIdentifierType>
+								<PREMIS:linkingObjectIdentifierValue>_20150511224554049</PREMIS:linkingObjectIdentifierValue>
+							</PREMIS:linkingObjectIdentifier>
+						</PREMIS:event>
+					</PREMIS:premis>
+				</METS:xmlData>
+			</METS:mdWrap>
+		</METS:digiprovMD>
+		<METS:digiprovMD ID="_20150511224616112">
+			<METS:mdWrap MDTYPE="PREMIS">
+				<METS:xmlData>
+					<PREMIS:premis version="2.2">
+						<PREMIS:object xsi:type="PREMIS:file">
+							<PREMIS:objectIdentifier>
+								<PREMIS:objectIdentifierType>Docuteam</PREMIS:objectIdentifierType>
+								<PREMIS:objectIdentifierValue>_20150511224616113</PREMIS:objectIdentifierValue>
+							</PREMIS:objectIdentifier>
+							<PREMIS:objectCharacteristics>
+								<PREMIS:compositionLevel>0</PREMIS:compositionLevel>
+								<PREMIS:fixity>
+									<PREMIS:messageDigestAlgorithm>MD5</PREMIS:messageDigestAlgorithm>
+									<PREMIS:messageDigest>a63e964f86abdbf1ae6a223cb9912030</PREMIS:messageDigest>
+								</PREMIS:fixity>
+								<PREMIS:size>76841</PREMIS:size>
+								<PREMIS:format>
+									<PREMIS:formatDesignation>
+										<PREMIS:formatName>Portable Network Graphics</PREMIS:formatName>
+									</PREMIS:formatDesignation>
+									<PREMIS:formatRegistry>
+										<PREMIS:formatRegistryName>PRONOM</PREMIS:formatRegistryName>
+										<PREMIS:formatRegistryKey>fmt/12</PREMIS:formatRegistryKey>
+									</PREMIS:formatRegistry>
+								</PREMIS:format>
+							</PREMIS:objectCharacteristics>
+							<PREMIS:originalName xlink:type="simple">Bildschirmfoto 2011-01-28 um
+								22.53.49.png</PREMIS:originalName>
+						</PREMIS:object>
+						<PREMIS:event>
+							<PREMIS:eventIdentifier>
+								<PREMIS:eventIdentifierType>Docuteam</PREMIS:eventIdentifierType>
+								<PREMIS:eventIdentifierValue>_20150511224616270</PREMIS:eventIdentifierValue>
+							</PREMIS:eventIdentifier>
+							<PREMIS:eventType>Creation</PREMIS:eventType>
+							<PREMIS:eventDateTime>2015-05-11T22:46:16</PREMIS:eventDateTime>
+							<PREMIS:eventDetail>Performed by: 'nef'</PREMIS:eventDetail>
+							<PREMIS:eventOutcomeInformation>
+								<PREMIS:eventOutcome>Success</PREMIS:eventOutcome>
+							</PREMIS:eventOutcomeInformation>
+							<PREMIS:linkingObjectIdentifier xlink:type="simple">
+								<PREMIS:linkingObjectIdentifierType>Docuteam</PREMIS:linkingObjectIdentifierType>
+								<PREMIS:linkingObjectIdentifierValue>_20150511224616113</PREMIS:linkingObjectIdentifierValue>
+							</PREMIS:linkingObjectIdentifier>
+						</PREMIS:event>
+					</PREMIS:premis>
+				</METS:xmlData>
+			</METS:mdWrap>
+		</METS:digiprovMD>
+		<METS:digiprovMD ID="_20150511224617093">
+			<METS:mdWrap MDTYPE="PREMIS">
+				<METS:xmlData>
+					<PREMIS:premis version="2.2">
+						<PREMIS:object xsi:type="PREMIS:file">
+							<PREMIS:objectIdentifier>
+								<PREMIS:objectIdentifierType>Docuteam</PREMIS:objectIdentifierType>
+								<PREMIS:objectIdentifierValue>_20150511224617094</PREMIS:objectIdentifierValue>
+							</PREMIS:objectIdentifier>
+							<PREMIS:objectCharacteristics>
+								<PREMIS:compositionLevel>0</PREMIS:compositionLevel>
+								<PREMIS:fixity>
+									<PREMIS:messageDigestAlgorithm>MD5</PREMIS:messageDigestAlgorithm>
+									<PREMIS:messageDigest>c335616a8184cdde1e27e6e45d3a1e53</PREMIS:messageDigest>
+								</PREMIS:fixity>
+								<PREMIS:size>64197</PREMIS:size>
+								<PREMIS:format>
+									<PREMIS:formatDesignation>
+										<PREMIS:formatName>Portable Network Graphics</PREMIS:formatName>
+									</PREMIS:formatDesignation>
+									<PREMIS:formatRegistry>
+										<PREMIS:formatRegistryName>PRONOM</PREMIS:formatRegistryName>
+										<PREMIS:formatRegistryKey>fmt/12</PREMIS:formatRegistryKey>
+									</PREMIS:formatRegistry>
+								</PREMIS:format>
+							</PREMIS:objectCharacteristics>
+							<PREMIS:originalName xlink:type="simple">Bildschirmfoto 2011-01-28 um
+								22.58.58.png</PREMIS:originalName>
+						</PREMIS:object>
+						<PREMIS:event>
+							<PREMIS:eventIdentifier>
+								<PREMIS:eventIdentifierType>Docuteam</PREMIS:eventIdentifierType>
+								<PREMIS:eventIdentifierValue>_20150511224617110</PREMIS:eventIdentifierValue>
+							</PREMIS:eventIdentifier>
+							<PREMIS:eventType>Creation</PREMIS:eventType>
+							<PREMIS:eventDateTime>2015-05-11T22:46:17</PREMIS:eventDateTime>
+							<PREMIS:eventDetail>Performed by: 'nef'</PREMIS:eventDetail>
+							<PREMIS:eventOutcomeInformation>
+								<PREMIS:eventOutcome>Success</PREMIS:eventOutcome>
+							</PREMIS:eventOutcomeInformation>
+							<PREMIS:linkingObjectIdentifier xlink:type="simple">
+								<PREMIS:linkingObjectIdentifierType>Docuteam</PREMIS:linkingObjectIdentifierType>
+								<PREMIS:linkingObjectIdentifierValue>_20150511224617094</PREMIS:linkingObjectIdentifierValue>
+							</PREMIS:linkingObjectIdentifier>
+						</PREMIS:event>
+					</PREMIS:premis>
+				</METS:xmlData>
+			</METS:mdWrap>
+		</METS:digiprovMD>
+		<METS:digiprovMD ID="_20150511224617636">
+			<METS:mdWrap MDTYPE="PREMIS">
+				<METS:xmlData>
+					<PREMIS:premis version="2.2">
+						<PREMIS:object xsi:type="PREMIS:file">
+							<PREMIS:objectIdentifier>
+								<PREMIS:objectIdentifierType>Docuteam</PREMIS:objectIdentifierType>
+								<PREMIS:objectIdentifierValue>_20150511224617638</PREMIS:objectIdentifierValue>
+							</PREMIS:objectIdentifier>
+							<PREMIS:objectCharacteristics>
+								<PREMIS:compositionLevel>0</PREMIS:compositionLevel>
+								<PREMIS:fixity>
+									<PREMIS:messageDigestAlgorithm>MD5</PREMIS:messageDigestAlgorithm>
+									<PREMIS:messageDigest>a1fc6e93e712be8b979449fbec2e9617</PREMIS:messageDigest>
+								</PREMIS:fixity>
+								<PREMIS:size>64041</PREMIS:size>
+								<PREMIS:format>
+									<PREMIS:formatDesignation>
+										<PREMIS:formatName>Portable Network Graphics</PREMIS:formatName>
+									</PREMIS:formatDesignation>
+									<PREMIS:formatRegistry>
+										<PREMIS:formatRegistryName>PRONOM</PREMIS:formatRegistryName>
+										<PREMIS:formatRegistryKey>fmt/12</PREMIS:formatRegistryKey>
+									</PREMIS:formatRegistry>
+								</PREMIS:format>
+							</PREMIS:objectCharacteristics>
+							<PREMIS:originalName xlink:type="simple">Bildschirmfoto 2011-01-28 um
+								23.07.38.png</PREMIS:originalName>
+						</PREMIS:object>
+						<PREMIS:event>
+							<PREMIS:eventIdentifier>
+								<PREMIS:eventIdentifierType>Docuteam</PREMIS:eventIdentifierType>
+								<PREMIS:eventIdentifierValue>_20150511224617662</PREMIS:eventIdentifierValue>
+							</PREMIS:eventIdentifier>
+							<PREMIS:eventType>Creation</PREMIS:eventType>
+							<PREMIS:eventDateTime>2015-05-11T22:46:17</PREMIS:eventDateTime>
+							<PREMIS:eventDetail>Performed by: 'nef'</PREMIS:eventDetail>
+							<PREMIS:eventOutcomeInformation>
+								<PREMIS:eventOutcome>Success</PREMIS:eventOutcome>
+							</PREMIS:eventOutcomeInformation>
+							<PREMIS:linkingObjectIdentifier xlink:type="simple">
+								<PREMIS:linkingObjectIdentifierType>Docuteam</PREMIS:linkingObjectIdentifierType>
+								<PREMIS:linkingObjectIdentifierValue>_20150511224617638</PREMIS:linkingObjectIdentifierValue>
+							</PREMIS:linkingObjectIdentifier>
+						</PREMIS:event>
+					</PREMIS:premis>
+				</METS:xmlData>
+			</METS:mdWrap>
+		</METS:digiprovMD>
+		<METS:digiprovMD ID="_20150511224617974">
+			<METS:mdWrap MDTYPE="PREMIS">
+				<METS:xmlData>
+					<PREMIS:premis version="2.2">
+						<PREMIS:object xsi:type="PREMIS:file">
+							<PREMIS:objectIdentifier>
+								<PREMIS:objectIdentifierType>Docuteam</PREMIS:objectIdentifierType>
+								<PREMIS:objectIdentifierValue>_20150511224617978</PREMIS:objectIdentifierValue>
+							</PREMIS:objectIdentifier>
+							<PREMIS:objectCharacteristics>
+								<PREMIS:compositionLevel>0</PREMIS:compositionLevel>
+								<PREMIS:fixity>
+									<PREMIS:messageDigestAlgorithm>MD5</PREMIS:messageDigestAlgorithm>
+									<PREMIS:messageDigest>5cebc8e3cb97bda58912253ffe512e24</PREMIS:messageDigest>
+								</PREMIS:fixity>
+								<PREMIS:size>48338</PREMIS:size>
+								<PREMIS:format>
+									<PREMIS:formatDesignation>
+										<PREMIS:formatName>Portable Network Graphics</PREMIS:formatName>
+									</PREMIS:formatDesignation>
+									<PREMIS:formatRegistry>
+										<PREMIS:formatRegistryName>PRONOM</PREMIS:formatRegistryName>
+										<PREMIS:formatRegistryKey>fmt/12</PREMIS:formatRegistryKey>
+									</PREMIS:formatRegistry>
+								</PREMIS:format>
+							</PREMIS:objectCharacteristics>
+							<PREMIS:originalName xlink:type="simple">Bildschirmfoto 2011-01-29 um
+								13.00.15.png</PREMIS:originalName>
+						</PREMIS:object>
+						<PREMIS:event>
+							<PREMIS:eventIdentifier>
+								<PREMIS:eventIdentifierType>Docuteam</PREMIS:eventIdentifierType>
+								<PREMIS:eventIdentifierValue>_20150511224617998</PREMIS:eventIdentifierValue>
+							</PREMIS:eventIdentifier>
+							<PREMIS:eventType>Creation</PREMIS:eventType>
+							<PREMIS:eventDateTime>2015-05-11T22:46:17</PREMIS:eventDateTime>
+							<PREMIS:eventDetail>Performed by: 'nef'</PREMIS:eventDetail>
+							<PREMIS:eventOutcomeInformation>
+								<PREMIS:eventOutcome>Success</PREMIS:eventOutcome>
+							</PREMIS:eventOutcomeInformation>
+							<PREMIS:linkingObjectIdentifier xlink:type="simple">
+								<PREMIS:linkingObjectIdentifierType>Docuteam</PREMIS:linkingObjectIdentifierType>
+								<PREMIS:linkingObjectIdentifierValue>_20150511224617978</PREMIS:linkingObjectIdentifierValue>
+							</PREMIS:linkingObjectIdentifier>
+						</PREMIS:event>
+					</PREMIS:premis>
+				</METS:xmlData>
+			</METS:mdWrap>
+		</METS:digiprovMD>
+	</METS:amdSec>
+	<METS:fileSec>
+		<METS:fileGrp>
+			<METS:file ID="_20150511224554983" MIMETYPE="image/png">
+				<METS:FLocat LOCTYPE="URL" xlink:href="file:///png/Bildschirmfoto 2011-01-28 um 22.53.49.png"/>
+			</METS:file>
+			<METS:file ID="_20150511224617071" MIMETYPE="image/png">
+				<METS:FLocat LOCTYPE="URL" xlink:href="file:///png/Bildschirmfoto 2011-01-28 um 22.58.58.png"/>
+			</METS:file>
+			<METS:file ID="_20150511224617630" MIMETYPE="image/png">
+				<METS:FLocat LOCTYPE="URL" xlink:href="file:///png/Bildschirmfoto 2011-01-28 um 23.07.38.png"/>
+			</METS:file>
+			<METS:file ID="_20150511224617967" MIMETYPE="image/png">
+				<METS:FLocat LOCTYPE="URL" xlink:href="file:///png/Bildschirmfoto 2011-01-29 um 13.00.15.png"/>
+			</METS:file>
+		</METS:fileGrp>
+	</METS:fileSec>
+	<METS:structMap>
+
+		<METS:div LABEL="png" TYPE="rootfolder" ADMID="_20150511224554047">
+			<METS:div LABEL="EAD" TYPE="metadata" DMDID="_20150511224554063"/>
+			<METS:div LABEL="Bildschirmfoto 2011-01-28 um 22.53.49.png" TYPE="file" ADMID="_20150511224616112">
+				<METS:div LABEL="Content" TYPE="content">
+					<METS:fptr FILEID="_20150511224554983"/>
+				</METS:div>
+				<METS:div LABEL="EAD" TYPE="metadata" DMDID="_20150511224616281"/>
+			</METS:div>
+			<METS:div LABEL="Bildschirmfoto 2011-01-28 um 22.58.58.png" TYPE="file" ADMID="_20150511224617093">
+				<METS:div LABEL="Content" TYPE="content">
+					<METS:fptr FILEID="_20150511224617071"/>
+				</METS:div>
+				<METS:div LABEL="EAD" TYPE="metadata" DMDID="_20150511224617114"/>
+			</METS:div>
+			<METS:div LABEL="Bildschirmfoto 2011-01-28 um 23.07.38.png" TYPE="file" ADMID="_20150511224617636">
+				<METS:div LABEL="Content" TYPE="content">
+					<METS:fptr FILEID="_20150511224617630"/>
+				</METS:div>
+				<METS:div LABEL="EAD" TYPE="metadata" DMDID="_20150511224617668"/>
+			</METS:div>
+			<METS:div LABEL="Bildschirmfoto 2011-01-29 um 13.00.15.png" TYPE="file" ADMID="_20150511224617974">
+				<METS:div LABEL="Content" TYPE="content">
+					<METS:fptr FILEID="_20150511224617967"/>
+				</METS:div>
+				<METS:div LABEL="EAD" TYPE="metadata" DMDID="_20150511224618012"/>
+			</METS:div>
+		</METS:div>
+	</METS:structMap>
+</METS:mets>
