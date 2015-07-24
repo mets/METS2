@@ -1,0 +1,121 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v1#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sparcontext: <info:bnf/spar/context#> .
+@prefix sparfixity: <info:bnf/spar/fixity#> .
+@prefix sparmix: <info:bnf/spar/mix#> .
+@prefix sparprovenance: <info:bnf/spar/provenance#> .
+@prefix sparrepresentation: <info:bnf/spar/representation#> .
+@prefix sparstructure: <info:bnf/spar/structure#> .
+
+<ark:/12148/btv1b59670437.version0.release0.manifest> a mets:document;
+<!--problem: we need to keep the structMap as a class because we need to qualify it with a type="physical" and "toc", etc.-->
+	mets:hasStructuralMap <ark:/12148/btv1b59670437.version0.release0.physical>.
+	
+<ark:/12148/btv1b59670437.version0.release0.physical> a mets:division;
+		<!--problem-->
+	mets:hasPart ????
+	
+???? mets:hasDescriptiveMetadata _:b10000;
+	mets:has????Metadata :b10003.
+	
+	<!--problem-->
+_:b10000 a ????;
+	dc:creator "Benning, R. (16..-17.. ; graveur). Graveur";
+	dc:creator "Taylor, Isaac (17..-17..). Cartographe";
+	dc:date "1759";
+	dc:language "eng";
+	dc:publisher "[s.n.]";
+	dc:relation <ark:/12148/cb40664622p>;
+	dc:title "This map of Hampshire including the isle of Wight / is most humbly dedicated by... Isaac Taylor ; R. Benning Sculp.";
+	dc:type "still images";
+	dc:provenance _:b30239.
+	
+_:b10003 premis:hasEvent <info:bnf/spar/provenance/c7912e30-dd20-11e4-a2f7-525400a91e24> ;
+	premis:hasEvent <info:bnf/spar/provenance/30265cf0-dd20-11e4-ae12-525400a91e24>;
+	premis:hasEvent <info:bnf/spar/provenance/d1647070-dd20-11e4-a2f7-525400a91e24> ;
+	premis:hasEvent <info:bnf/spar/provenance/30254b80-dd20-11e4-ae12-525400a91e24> ;
+	premis:hasEvent <info:bnf/spar/provenance/d23c59e0-dd20-11e4-a2f7-525400a91e24> ;
+	premis:hasEvent <info:bnf/spar/provenance/3026f930-dd20-11e4-ae12-525400a91e24> ;
+	premis:hasEvent <info:bnf/spar/provenance/d2272430-dd20-11e4-a2f7-525400a91e24> .
+	premis:hasSize "1033064724";
+	sparcontext:isMemberOf <ark:/12148/br2d22g>;
+	sparcontext:release "0";
+	sparcontext:version "0";
+	sparfixity:fileCount 1;
+	sparfixity:objectCount 1.
+	
+_:b30239 dc:description "BnF".
+
+???? hasPart <ark:/12148/btv1b59670437/f1.version0.release0>.
+
+<ark:/12148/btv1b59670437/f1.version0.release0> a mets:division;
+	mets:hasDescriptiveMetadata _:b10001;
+	mets:hasManifestation <ark:/12148/btv1b59670437/f1/master.version0.release0>.
+
+_:b10001 dc:title "This map of Hampshire including the isle of Wight [GE DD-2987 (2110 B)]".
+	
+<ark:/12148/btv1b59670437/f1/master.version0.release0> a mets:file;
+	premis:hasObjectCharacteristics :_b10002.
+	
+<!--we cannot realize it here, because there is just one file, but mentionning format, composition level, resolution, use... at the "file" level is much more verbose than mentionning all this at the "fileGroup" level, as we do it in SPAR-->
+_:b10002 premis:hasFormat <ark:/12148/br2d28q>;
+<!--problem: we need to mention at the file/fileGroup level sthg about the analog source: how do we mention this?-->
+	mets:use "master";
+	premis:hasEvent _:b30236;
+	premis:hasSize "1033064724";
+	sparmix:bitsPerSampleValue "8,8,8";
+	sparmix:byteOrder "little_endian";
+	sparmix:compressionScheme "1";
+	sparmix:samplesPerPixel "3";
+	sparmix:scannerModelName "C1";
+	sparmix:scanningSoftwareName "LeadTools 12.1";
+	sparrepresentation:dpiX "300";
+	sparrepresentation:dpiY "300";
+	sparrepresentation:Height "";
+	sparrepresentation:Width "".
+
+_:b30236 a sparprovenance:fileProcessing;
+<!--I don't understand quite well how in PREMIS we mention the role of each agent...-->
+	sparprovenance:hasPerformer <ark:/12148/br2d2cb>;
+	sparprovenance:hasPerformer <ark:/12148/br2d2bf8>;
+	premis:hasEventOutcome "Well-Formed and valid".
+	
+<info:bnf/spar/provenance/30254b80-dd20-11e4-ae12-525400a91e24> a sparprovenance:packageCreation;
+	premis:hasEventDateTime "2015-04-07T14:18:24.441+02:00";
+	premis:hasEventDetail "Création d'un paquet compatible avec SPAR";
+	sparprovenance:hasAuthorizer <info:bnf/spar/context/fil_num_cons_a>;
+	sparprovenance:hasIssuer <info:bnf/spar/agent/IFN>;
+	sparprovenance:hasPerformer <info:bnf/spar/agent/preingest_fil_num_cons_a_act_52>.
+	
+<info:bnf/spar/provenance/30265cf0-dd20-11e4-ae12-525400a91e24> a sparprovenance:digitization;
+	premis:hasEventDateTime "2009-03-03";
+	premis:hasEventDetail "manual treatment";
+	sparprovenance:hasImplementer _:b30237.
+	
+_:b30237 a foaf:agent;
+	foaf:name "44001440".
+	
+<info:bnf/spar/provenance/3026f930-dd20-11e4-ae12-525400a91e24> a sparprovenance:preIngest;
+	premis:hasEventDateTime  "2015-04-07T14:18:24.454+02:00";
+	premis:hasEventOutcome "arkRetrieval";
+	premis:hasEventOutcomeDetailNote "Récupération de l'identifiant ARK".
+	
+<info:bnf/spar/provenance/c7912e30-dd20-11e4-a2f7-525400a91e24> a sparprovenance:packageAudit;
+	premis:hasEventDateTime "2015-04-07T14:22:38.483+02:00";
+	sparprovenance:hasPerformer <ark:/12148/br2d27h/act05>.
+	
+<info:bnf/spar/provenance/d1647070-dd20-11e4-a2f7-525400a91e24> a sparprovenance:filesProcessing;
+	premis:hasEventDateTime "2015-04-07T14:22:54.968+02:00";
+	sparprovenance:hasPerformer <ark:/12148/br2d27h/act06>.
+	
+<info:bnf/spar/provenance/d2272430-dd20-11e4-a2f7-525400a91e24> a sparprovenance:idGeneration;
+	premis:hasEventDateTime "2015-04-07T14:22:56.243+02:00";
+	sparprovenance:hasPerformer <ark:/12148/br2d27h/act07>;
+	premis:hasEventOutcome "ark:/12148/btv1b59670437".
+	
+<info:bnf/spar/provenance/d23c59e0-dd20-11e4-a2f7-525400a91e24> a sparprovenance:ingestCompletion;
+	premis:hasEventDateTime "2015-04-07T14:22:56.382+02:00";
+	sparprovenance:hasPerformer "ark:/12148/br2d27h/act09";
+	premis:hasEventOutcome "ark-12148-btv1b59670437.version0.release0.tar".

@@ -1,0 +1,530 @@
+<mets xmlns="http://www.loc.gov/METS/" xmlns:premis="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:spar_dc="http://bibnum.bnf.fr/ns/spar_dc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:detailsOperation="http://bibnum.bnf.fr/ns/detailsOperation">
+  <dmdSec ID="DMD.1">
+    <mdWrap MIMETYPE="text/xml" MDTYPE="DC">
+      <xmlData>
+        <spar_dc:spar_dc>
+          <dc:title>This map of Hampshire including the isle of Wight / is most humbly dedicated by... Isaac Taylor ; R. Benning Sculp.</dc:title>
+          <dc:creator>Taylor, Isaac (17..-17..). Cartographe</dc:creator>
+          <dc:creator>Benning, R. (16..-17.. ; graveur). Graveur</dc:creator>
+          <dc:publisher>[s.n.]</dc:publisher>
+          <dc:date>1759</dc:date>
+          <dc:type>still images</dc:type>
+          <dcterms:provenance>BnF</dcterms:provenance>
+          <dc:language xsi:type="dcterms:ISO639-3">eng</dc:language>
+          <dc:relation xsi:type="spar_dc:ark">ark:/12148/cb40664622p</dc:relation>
+        </spar_dc:spar_dc>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+  <dmdSec ID="DMD.2">
+    <mdWrap MIMETYPE="text/xml" MDTYPE="DC">
+      <xmlData>
+        <spar_dc:spar_dc>
+          <dc:title>This map of Hampshire including the isle of Wight [GE DD-2987 (2110 B)]</dc:title>
+        </spar_dc:spar_dc>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+  <amdSec>
+    <techMD ID="AMD.7">
+      <mdWrap MDTYPE="PREMIS:OBJECT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:object xsi:type="premis:representation">
+            <premis:objectIdentifier>
+              <premis:objectIdentifierType>ark</premis:objectIdentifierType>
+              <premis:objectIdentifierValue>ark:/12148/btv1b59670437</premis:objectIdentifierValue>
+            </premis:objectIdentifier>
+            <premis:objectIdentifier>
+              <premis:objectIdentifierType>productionIdentifier</premis:objectIdentifierType>
+              <premis:objectIdentifierValue>5967043</premis:objectIdentifierValue>
+            </premis:objectIdentifier>
+            <premis:objectIdentifier>
+              <premis:objectIdentifierType>versionIdentifier</premis:objectIdentifierType>
+              <premis:objectIdentifierValue>version0.release0</premis:objectIdentifierValue>
+            </premis:objectIdentifier>
+            <premis:relationship>
+              <premis:relationshipType>track</premis:relationshipType>
+              <premis:relationshipSubType>channel</premis:relationshipSubType>
+              <premis:relatedObjectIdentification>
+                <premis:relatedObjectIdentifierType>ark</premis:relatedObjectIdentifierType>
+                <premis:relatedObjectIdentifierValue>ark:/12148/br2d22g</premis:relatedObjectIdentifierValue>
+              </premis:relatedObjectIdentification>
+            </premis:relationship>
+          </premis:object>
+        </xmlData>
+      </mdWrap>
+    </techMD>
+    <techMD ID="AMD.8">
+      <mdWrap MDTYPE="PREMIS:OBJECT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:object xsi:type="premis:file">
+            <premis:objectIdentifier>
+              <premis:objectIdentifierType>metsIdentifier</premis:objectIdentifierType>
+              <premis:objectIdentifierValue>master.1</premis:objectIdentifierValue>
+            </premis:objectIdentifier>
+            <premis:objectCharacteristics>
+              <premis:compositionLevel>0</premis:compositionLevel>
+              <premis:format>
+                <premis:formatDesignation>
+                  <premis:formatName>image/tiff</premis:formatName>
+                  <premis:formatVersion>6.0</premis:formatVersion>
+                </premis:formatDesignation>
+                <premis:formatRegistry>
+                  <premis:formatRegistryName>BnF SPAR</premis:formatRegistryName>
+                  <premis:formatRegistryKey>ark:/12148/br2d28q</premis:formatRegistryKey>
+                </premis:formatRegistry>
+              </premis:format>
+            </premis:objectCharacteristics>
+            <premis:storage>
+              <premis:storageMedium>SPAR storage unit</premis:storageMedium>
+            </premis:storage>
+          </premis:object>
+        </xmlData>
+      </mdWrap>
+    </techMD>
+    <techMD ID="AMD.9">
+      <mdWrap MDTYPE="NISOIMG" MIMETYPE="text/xml">
+        <xmlData>
+          <mix:mix xmlns:mix="http://www.loc.gov/mix/v10">
+            <mix:BasicDigitalObjectInformation>
+              <mix:byteOrder>little_endian</mix:byteOrder>
+              <mix:Compression>
+                <mix:compressionScheme>1</mix:compressionScheme>
+              </mix:Compression>
+            </mix:BasicDigitalObjectInformation>
+            <mix:BasicImageInformation>
+              <mix:BasicImageCharacteristics>
+                <mix:imageWidth>17418</mix:imageWidth>
+                <mix:imageHeight>19767</mix:imageHeight>
+                <mix:PhotometricInterpretation>
+                  <mix:colorSpace>2</mix:colorSpace>
+                  <mix:referenceBlackWhite>0 0 255 255 0 0 255 255 0 0 255 255</mix:referenceBlackWhite>
+                </mix:PhotometricInterpretation>
+              </mix:BasicImageCharacteristics>
+            </mix:BasicImageInformation>
+            <mix:ImageCaptureMetadata>
+              <mix:GeneralCaptureInformation>
+                <mix:dateTimeCreated>2009-03-03T11:37:47</mix:dateTimeCreated>
+                <mix:imageProducer>Biblioth%E8que nationale de France - cote : N05967043</mix:imageProducer>
+              </mix:GeneralCaptureInformation>
+              <mix:ScannerCapture>
+                <mix:ScannerModel>
+                  <mix:scannerModelName>C1</mix:scannerModelName>
+                </mix:ScannerModel>
+                <mix:ScanningSystemSoftware>
+                  <mix:scanningSoftwareName>LeadTools 12.1</mix:scanningSoftwareName>
+                </mix:ScanningSystemSoftware>
+              </mix:ScannerCapture>
+              <mix:orientation>1</mix:orientation>
+            </mix:ImageCaptureMetadata>
+            <mix:ImageAssessmentMetadata>
+              <mix:SpatialMetrics>
+                <mix:samplingFrequencyUnit>2</mix:samplingFrequencyUnit>
+                <mix:xSamplingFrequency>
+                  <mix:numerator>629145600</mix:numerator>
+                  <mix:denominator>2097152</mix:denominator>
+                </mix:xSamplingFrequency>
+                <mix:ySamplingFrequency>
+                  <mix:numerator>629145600</mix:numerator>
+                  <mix:denominator>2097152</mix:denominator>
+                </mix:ySamplingFrequency>
+              </mix:SpatialMetrics>
+              <mix:ImageColorEncoding>
+                <mix:bitsPerSample>
+                  <mix:bitsPerSampleValue>8,8,8</mix:bitsPerSampleValue>
+                  <mix:bitsPerSampleUnit>integer</mix:bitsPerSampleUnit>
+                </mix:bitsPerSample>
+                <mix:samplesPerPixel>3</mix:samplesPerPixel>
+              </mix:ImageColorEncoding>
+            </mix:ImageAssessmentMetadata>
+          </mix:mix>
+        </xmlData>
+      </mdWrap>
+    </techMD>
+    <sourceMD ID="AMD.1">
+      <mdWrap MIMETYPE="text/xml" MDTYPE="DC">
+        <xmlData>
+          <spar_dc:spar_dc>
+            <dc:description xml:lang="fr">Papier en feuille en couleur</dc:description>
+          </spar_dc:spar_dc>
+        </xmlData>
+      </mdWrap>
+    </sourceMD>
+    <digiprovMD ID="AMD.2">
+      <mdWrap MIMETYPE="text/xml" MDTYPE="PREMIS:EVENT">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>804118d0-fdb3-11e3-82d1-5cf3fc0c4018</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>preIngest</premis:eventType>
+            <premis:eventDateTime>2012-04-02T12:13:22</premis:eventDateTime>
+            <premis:eventDetail>Mise à jour pour préversement SPAR</premis:eventDetail>
+            <premis:linkingObjectIdentifier>
+              <premis:linkingObjectIdentifierType>productionIdentifier</premis:linkingObjectIdentifierType>
+              <premis:linkingObjectIdentifierValue>5967043</premis:linkingObjectIdentifierValue>
+            </premis:linkingObjectIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.3">
+      <mdWrap MIMETYPE="text/xml" MDTYPE="PREMIS:EVENT">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>804118d1-fdb3-11e3-82d1-5cf3fc0c4018</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>preIngest</premis:eventType>
+            <premis:eventDateTime>2014-04-17T16:31:13</premis:eventDateTime>
+            <premis:eventDetail>Mise à jour pour préversement SPAR</premis:eventDetail>
+            <premis:linkingObjectIdentifier>
+              <premis:linkingObjectIdentifierType>productionIdentifier</premis:linkingObjectIdentifierType>
+              <premis:linkingObjectIdentifierValue>5967043</premis:linkingObjectIdentifierValue>
+            </premis:linkingObjectIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.4">
+      <mdWrap MIMETYPE="text/xml" MDTYPE="PREMIS:EVENT">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>804118d2-fdb3-11e3-82d1-5cf3fc0c4018</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>packageCreation</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:28:34.397+02:00</premis:eventDateTime>
+            <premis:eventDetail>Création d'un paquet compatible avec SPAR</premis:eventDetail>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>BnFApplication</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>info:bnf/spar/agent/preingest_fil_num_cons_a_act_52</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>producerIdentifier</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>IFN</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>issuer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>channelIdentifier</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>info:bnf/spar/context/fil_num_cons_a</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>authorizer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingObjectIdentifier>
+              <premis:linkingObjectIdentifierType>productionIdentifier</premis:linkingObjectIdentifierType>
+              <premis:linkingObjectIdentifierValue>5967043</premis:linkingObjectIdentifierValue>
+            </premis:linkingObjectIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.5">
+      <mdWrap MIMETYPE="text/xml" MDTYPE="PREMIS:EVENT">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>804118d3-fdb3-11e3-82d1-5cf3fc0c4018</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>digitization</premis:eventType>
+            <premis:eventDateTime>2009-03-03</premis:eventDateTime>
+            <premis:eventDetail>manual treatment</premis:eventDetail>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>producerIdentifier</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>44001440</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>implementer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingObjectIdentifier>
+              <premis:linkingObjectIdentifierType>productionIdentifier</premis:linkingObjectIdentifierType>
+              <premis:linkingObjectIdentifierValue>5967043</premis:linkingObjectIdentifierValue>
+            </premis:linkingObjectIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.6">
+      <mdWrap MIMETYPE="text/xml" MDTYPE="PREMIS:EVENT">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>804118d4-fdb3-11e3-82d1-5cf3fc0c4018</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>preIngest</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:28:34.397+02:00</premis:eventDateTime>
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>arkRetrieval</premis:eventOutcome>
+              <premis:eventOutcomeDetail>
+                <premis:eventOutcomeDetailNote>Récupération de l'identifiant ARK</premis:eventOutcomeDetailNote>
+              </premis:eventOutcomeDetail>
+            </premis:eventOutcomeInformation>
+            <premis:linkingObjectIdentifier>
+              <premis:linkingObjectIdentifierType>ark</premis:linkingObjectIdentifierType>
+              <premis:linkingObjectIdentifierValue>ark:/12148/btv1b59670437</premis:linkingObjectIdentifierValue>
+            </premis:linkingObjectIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.10">
+      <mdWrap MIMETYPE="text/xml" MDTYPE="PREMIS:EVENT">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>e5001cd0-fdb3-11e3-a973-002128ebe83e</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>fileProcessing</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:31:23.422+02:00</premis:eventDateTime>
+            <premis:eventDetail>fileProcessing is valid</premis:eventDetail>
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>Well-Formed and valid</premis:eventOutcome>
+            </premis:eventOutcomeInformation>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>identificationTool</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d2cb</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>characterizationTool</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d238m</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.11">
+      <mdWrap MDTYPE="PREMIS:EVENT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>bbac2040-fdb3-11e3-9427-002128eb98be</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>packageReception</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:30:14.084+02:00</premis:eventDateTime>
+            <premis:eventDetail>packageReception is valid</premis:eventDetail>
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>b03714e0-fdb3-11e3-9427-002128eb98be</premis:eventOutcome>
+            </premis:eventOutcomeInformation>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>BnFApplication</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d27h/act01</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.12">
+      <mdWrap MDTYPE="PREMIS:EVENT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>dd725dc0-fdb3-11e3-a973-002128ebe83e</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>requestAudit</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:31:10.748+02:00</premis:eventDateTime>
+            <premis:eventDetail>requestAudit is valid</premis:eventDetail>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>BnFApplication</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d27h/act02</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.13">
+      <mdWrap MDTYPE="PREMIS:EVENT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>dd83e9f0-fdb3-11e3-a973-002128ebe83e</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>metsValidation</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:31:10.863+02:00</premis:eventDateTime>
+            <premis:eventDetail>metsValidation is valid</premis:eventDetail>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>BnFApplication</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d27h/act03</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.14">
+      <mdWrap MDTYPE="PREMIS:EVENT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>dd8ceaa0-fdb3-11e3-a973-002128ebe83e</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>packageSearch</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:31:10.922+02:00</premis:eventDateTime>
+            <premis:eventDetail>packageSearch is valid</premis:eventDetail>
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>IFN</premis:eventOutcome>
+            </premis:eventOutcomeInformation>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>BnFApplication</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d27h/act04</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.15">
+      <mdWrap MDTYPE="PREMIS:EVENT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>e4ae7a60-fdb3-11e3-a973-002128ebe83e</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>packageAudit</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:31:22.886+02:00</premis:eventDateTime>
+            <premis:eventDetail>packageAudit is valid</premis:eventDetail>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>BnFApplication</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d27h/act05</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.16">
+      <mdWrap MDTYPE="PREMIS:EVENT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>e50043e0-fdb3-11e3-a973-002128ebe83e</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>filesProcessing</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:31:23.422+02:00</premis:eventDateTime>
+            <premis:eventDetail>filesProcessing is valid</premis:eventDetail>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>BnFApplication</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d27h/act06</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.17">
+      <mdWrap MDTYPE="PREMIS:EVENT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>e50d3c30-fdb3-11e3-a973-002128ebe83e</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>AIPFilesProcessing</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:31:23.507+02:00</premis:eventDateTime>
+            <premis:eventDetail>AIPFilesProcessing is valid</premis:eventDetail>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>BnFApplication</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d27h/act18</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.18">
+      <mdWrap MDTYPE="PREMIS:EVENT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>e5104970-fdb3-11e3-a973-002128ebe83e</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>idGeneration</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:31:23.527+02:00</premis:eventDateTime>
+            <premis:eventDetail>idGeneration is valid</premis:eventDetail>
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>ark:/12148/btv1b59670437</premis:eventOutcome>
+            </premis:eventOutcomeInformation>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>BnFApplication</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d27h/act07</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.19">
+      <mdWrap MDTYPE="PREMIS:EVENT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>e5124540-fdb3-11e3-a973-002128ebe83e</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>setProcessing</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:31:23.540+02:00</premis:eventDateTime>
+            <premis:eventDetail>setProcessing is valid</premis:eventDetail>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>BnFApplication</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d27h/act08</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+    <digiprovMD ID="AMD.20">
+      <mdWrap MDTYPE="PREMIS:EVENT" MIMETYPE="text/xml">
+        <xmlData>
+          <premis:event>
+            <premis:eventIdentifier>
+              <premis:eventIdentifierType>UUID</premis:eventIdentifierType>
+              <premis:eventIdentifierValue>e515c7b0-fdb3-11e3-a973-002128ebe83e</premis:eventIdentifierValue>
+            </premis:eventIdentifier>
+            <premis:eventType>ingestCompletion</premis:eventType>
+            <premis:eventDateTime>2014-06-27T06:31:23.563+02:00</premis:eventDateTime>
+            <premis:eventDetail>ingestCompletion is valid</premis:eventDetail>
+            <premis:eventOutcomeInformation>
+              <premis:eventOutcome>ark-12148-btv1b59670437.version0.release0.tar</premis:eventOutcome>
+            </premis:eventOutcomeInformation>
+            <premis:linkingAgentIdentifier>
+              <premis:linkingAgentIdentifierType>BnFApplication</premis:linkingAgentIdentifierType>
+              <premis:linkingAgentIdentifierValue>ark:/12148/br2d27h/act09</premis:linkingAgentIdentifierValue>
+              <premis:linkingAgentRole>performer</premis:linkingAgentRole>
+            </premis:linkingAgentIdentifier>
+          </premis:event>
+        </xmlData>
+      </mdWrap>
+    </digiprovMD>
+  </amdSec>
+  <fileSec>
+    <fileGrp USE="master" ID="GRP.1">
+      <file CHECKSUMTYPE="MD5" CHECKSUM="a79b7bed66977bf6804d7790c6dbae1b" ADMID="AMD.1 AMD.5 AMD.8 AMD.9 AMD.10" ID="master.1" MIMETYPE="image/tiff" SIZE="1033064724">
+        <FLocat xlink:type="simple" LOCTYPE="URL" xlink:href="master/T0000001.tif" />
+      </file>
+    </fileGrp>
+  </fileSec>
+  <structMap TYPE="physical">
+    <div TYPE="set" ID="DIV.1">
+      <div TYPE="group" ID="DIV.2" DMDID="DMD.1" ADMID="AMD.2 AMD.3 AMD.4 AMD.6 AMD.7 AMD.11 AMD.12 AMD.13 AMD.14 AMD.15 AMD.16 AMD.17 AMD.18 AMD.19 AMD.20">
+        <div TYPE="object" ORDERLABEL="NP" ORDER="1" ID="DIV.3" DMDID="DMD.2">
+          <fptr FILEID="master.1" />
+        </div>
+      </div>
+    </div>
+  </structMap>
+</mets>

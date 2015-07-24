@@ -1,0 +1,127 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix oai-ore: <http://www.openarchives.org/ore/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sparcontext: <info:bnf/spar/context#> .
+@prefix sparfixity: <info:bnf/spar/fixity#> .
+@prefix sparmix: <info:bnf/spar/mix#> .
+@prefix sparprovenance: <info:bnf/spar/provenance#> .
+@prefix sparrepresentation: <info:bnf/spar/representation#> .
+@prefix sparstructure: <info:bnf/spar/structure#> .
+
+<ark:/12148/btv1b59670437.version0.release0> a sparstructure:group;
+	dc:creator "Benning, R. (16..-17.. ; graveur). Graveur";
+	dc:creator "Taylor, Isaac (17..-17..). Cartographe";
+	dc:date "1759";
+	dc:language "eng";
+	dc:publisher "[s.n.]";
+	dc:relation <ark:/12148/cb40664622p>;
+	dc:title "This map of Hampshire including the isle of Wight / is most humbly dedicated by... Isaac Taylor ; R. Benning Sculp.";
+	dc:type "still images";
+	dc:provenance _:b30239;
+	oai-ore:aggregates <ark:/12148/btv1b59670437/f1.version0.release0> ;
+	sparcontext:isMemberOf <ark:/12148/br2d22g>;
+	sparcontext:release "0";
+	sparcontext:version "0";
+	sparfixity:fileCount 1;
+	sparfixity:objectCount 1;
+	sparfixity:size "1033064724";
+	sparprovenance:hasEvent <info:bnf/spar/provenance/c7912e30-dd20-11e4-a2f7-525400a91e24> ;
+	sparprovenance:hasEvent <info:bnf/spar/provenance/d1647070-dd20-11e4-a2f7-525400a91e24> ;
+	sparprovenance:hasEvent <info:bnf/spar/provenance/30254b80-dd20-11e4-ae12-525400a91e24> ;
+	sparprovenance:hasEvent <info:bnf/spar/provenance/30265cf0-dd20-11e4-ae12-525400a91e24>;
+	sparprovenance:hasEvent <info:bnf/spar/provenance/d23c59e0-dd20-11e4-a2f7-525400a91e24> ;
+	sparprovenance:hasEvent <info:bnf/spar/provenance/3026f930-dd20-11e4-ae12-525400a91e24> ;
+	sparprovenance:hasEvent <info:bnf/spar/provenance/d2272430-dd20-11e4-a2f7-525400a91e24> .
+
+_:b30239 dc:description "BnF".
+
+<ark:/12148/btv1b59670437/f1.version0.release0> a sparstructure:object;
+	dc:title "This map of Hampshire including the isle of Wight [GE DD-2987 (2110 B)]";
+	oai-ore:aggregates <ark:/12148/btv1b59670437/f1/master.version0.release0> ;
+	oai-ore:isAggregatedBy <ark:/12148/btv1b59670437.physical.version0.release0>.
+
+<ark:/12148/btv1b59670437/physical.version0.release0> a sparstructure:structuralMap;
+	dc:type "physical".
+	
+<ark:/12148/btv1b59670437/f1/master.version0.release0> a sparstructure:file;
+	dc:format <ark:/12148/br2d28q>;
+	oai-ore:isAggregatedBy <ark:/12148/btv1b59670437/master.version0.release0>;
+	sparfixity:size "1033064724".
+	
+<ark:/12148/btv1b59670437/master.version0.release0> a sparstructure:fileGroup;
+	dc:source _:30235;
+	sparfixity:fileCount 1;
+	sparfixity:objectCount 1;
+	sparfixity:size "1033064724";
+	sparmix:bitsPerSampleValue "8,8,8";
+	sparmix:byteOrder "little_endian";
+	sparmix:compressionScheme "1";
+	sparmix:samplesPerPixel "3";
+	sparmix:scannerModelName "C1";
+	sparmix:scanningSoftwareName "LeadTools 12.1";
+	sparprovenance:hasEvent _:b30236;
+	sparrepresentation:dpiX "300";
+	sparrepresentation:dpiY "300";
+	sparrepresentation:isUsedAs "master";
+	sparrepresentation:maxHeight "";
+	sparrepresentation:maxWidth "";
+	sparrepresentation:minHeight "";
+	sparrepresentation:minWidth "".
+	
+_:b30235 dc:description "Papier en feuille en couleur".
+
+_:b30236 a sparprovenance:fileProcessing;
+	sparprovenance:hasPerformer <ark:/12148/br2d2cb>;
+	sparprovenance:hasPerformer <ark:/12148/br2d2bf8>;
+	sparprovenance:hasProduct _:30238.
+	
+_:30238 a sparprovenance:outcomeInformation;
+	sparprovenance:eventOutcome "Well-Formed and valid".
+	
+<info:bnf/spar/provenance/30254b80-dd20-11e4-ae12-525400a91e24> a sparprovenance:packageCreation;
+	dc:date "2015-04-07T14:18:24.441+02:00";
+	dc:description "Cr�ation d'un paquet compatible avec SPAR";
+	sparprovenance:hasAuthorizer <info:bnf/spar/context/fil_num_cons_a>;
+	sparprovenance:hasIssuer <info:bnf/spar/agent/IFN>;
+	sparprovenance:hasPerformer <info:bnf/spar/agent/preingest_fil_num_cons_a_act_52>.
+	
+<info:bnf/spar/provenance/30265cf0-dd20-11e4-ae12-525400a91e24> a sparprovenance:digitization;
+	dc:date "2009-03-03";
+	dc:description "manual treatment";
+	sparprovenance:hasImplementer _:b30237.
+	
+_:b30237 a foaf:agent;
+	foaf:name "44001440".
+	
+<info:bnf/spar/provenance/3026f930-dd20-11e4-ae12-525400a91e24> a sparprovenance:preIngest;
+	dc:date "2015-04-07T14:18:24.454+02:00";
+	sparprovenance:hasProduct <info:bnf/spar/provenance/3026f930-dd20-11e4-ae12-525400a91e24/outcomeinformation1>.
+	
+<info:bnf/spar/provenance/3026f930-dd20-11e4-ae12-525400a91e24/outcomeinformation1> a sparprovenance:outcomeInformation;
+	sparprovenance:eventOutcome "arkRetrieval";
+	sparprovenance:eventOutcomeDetailNote "R�cup�ration de l'identifiant ARK".
+	
+<info:bnf/spar/provenance/c7912e30-dd20-11e4-a2f7-525400a91e24> a sparprovenance:packageAudit;
+	dc:date "2015-04-07T14:22:38.483+02:00";
+	sparprovenance:hasPerformer <ark:/12148/br2d27h/act05>.
+	
+<info:bnf/spar/provenance/d1647070-dd20-11e4-a2f7-525400a91e24> a sparprovenance:filesProcessing;
+	dc:date "2015-04-07T14:22:54.968+02:00";
+	sparprovenance:hasPerformer <ark:/12148/br2d27h/act06>.
+	
+<info:bnf/spar/provenance/d2272430-dd20-11e4-a2f7-525400a91e24> a sparprovenance:idGeneration;
+	dc:date "2015-04-07T14:22:56.243+02:00";
+	sparprovenance:hasPerformer <ark:/12148/br2d27h/act07>;
+	sparprovenance:hasProduct <info:bnf/spar/provenance/d2272430-dd20-11e4-a2f7-525400a91e24/outcomeinformation1>.
+
+<info:bnf/spar/provenance/d2272430-dd20-11e4-a2f7-525400a91e24/outcomeinformation1> a sparprovenance:outcomeInformation;
+	sparprovenance:eventOutcome "ark:/12148/btv1b59670437".
+	
+<info:bnf/spar/provenance/d23c59e0-dd20-11e4-a2f7-525400a91e24> a sparprovenance:ingestCompletion;
+	dc:date "2015-04-07T14:22:56.382+02:00";
+	sparprovenance:hasPerformer "ark:/12148/br2d27h/act09";
+	sparprovenance:hasProduct <info:bnf/spar/provenance/d23c59e0-dd20-11e4-a2f7-525400a91e24/outcomeinformation1>.
+	
+<info:bnf/spar/provenance/d23c59e0-dd20-11e4-a2f7-525400a91e24/outcomeinformation1> a sparprovenance:outcomeInformation;
+	sparprovenance:eventOutcome "ark-12148-btv1b59670437.version0.release0.tar".
