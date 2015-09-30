@@ -4,67 +4,66 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.geonames.org/ontology#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix edm: <http://www.europeana.eu/schemas/edm/> .
-@prefix ore: <http://www.openarchives.org/ore/terms> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
 @prefix premis: <http://www.loc.gov/premis/rdf/v1#> .
 @prefix mets: <http://www.loc.gov/METS2/rdf/v1#> .
 @prefix cnt: <http://www.w3.org/2011/content#> .
 
-<file:///png_mets.ttl> a mets:Document ;
+<file:///png_mets2.ttl> a mets:InformationPackage ;
 	dct:type "sa_all-formats-01_dss-01" ;
-	mets:hasStructuralMap <file:///png_mets.ttl#div1> .
+	mets:hasMainDivision <file:///png_mets2.ttl#rootDiv> .
 
-<file:///png_mets.ttl#div1> a mets:Division ;
-	mets:hasDescriptiveMetadata <file:///png_mets.ttl#qdc1> ;
-	mets:hasManifestation <file:///png> ;
-	mets:hasPart <file:///png_mets.ttl#div2> ;
-	mets:hasPart <file:///png_mets.ttl#div3> ;
-	mets:hasPart <file:///png_mets.ttl#div4> ;
-	mets:hasPart <file:///png_mets.ttl#div5> .
+<file:///png_mets2.ttl#rootDiv> a mets:MainDivision ;
+	mets:isDescribedBy <file:///png_mets2.ttl#qdc1> ;
+	mets:isManifestedBy <http://localhost:8080/fedora/objects/test:3451> ;
+	ore:aggregates <file:///png_mets2.ttl#div1> ;
+	ore:aggregates <file:///png_mets2.ttl#div2> ;
+	ore:aggregates <file:///png_mets2.ttl#div3> ;
+	ore:aggregates <file:///png_mets2.ttl#div4> .
 
-<file:///png_mets.ttl#div2> a mets:Division ;
-	mets:hasDescriptiveMetadata <file:///png_mets.ttl#qdc2> ;
-	mets:hasManifestation <file:///png/Bildschirmfoto 2011-01-28 um 22.53.49.png> .
+<file:///png_mets2.ttl#div1> a mets:Division ;
+	mets:isDescribedBy <file:///png_mets2.ttl#qdc2> ;
+	mets:isManifestedBy <http://localhost:8080/fedora/objects/test:3452> .
 
-<file:///png_mets.ttl#div3> a mets:Division ;
-	mets:hasDescriptiveMetadata <file:///png_mets.ttl#qdc3> ;
-	mets:hasManifestation <file:///png/Bildschirmfoto 2011-01-28 um 22.58.58.png> .
+<file:///png_mets2.ttl#div2> a mets:Division ;
+	mets:isDescribedBy <file:///png_mets2.ttl#qdc3> ;
+	mets:isManifestedBy <http://localhost:8080/fedora/objects/test:3453> .
 
-<file:///png_mets.ttl#div4> a mets:Division ;
-	mets:hasDescriptiveMetadata <file:///png_mets.ttl#qdc4> ;
-	mets:hasManifestation <file:///png/Bildschirmfoto 2011-01-28 um 23.07.38.png> .
+<file:///png_mets2.ttl#div3> a mets:Division ;
+	mets:isDescribedBy <file:///png_mets2.ttl#qdc4> ;
+	mets:isManifestedBy <http://localhost:8080/fedora/objects/test:3454> .
 
-<file:///png_mets.ttl#div5> a mets:Division ;
-	mets:hasDescriptiveMetadata <file:///png_mets.ttl#qdc5> ;
-	mets:hasManifestation <file:///png/Bildschirmfoto 2011-01-29 um 13.00.15.png> .
+<file:///png_mets2.ttl#div4> a mets:Division ;
+	mets:isDescribedBy <file:///png_mets2.ttl#qdc5> ;
+	mets:isManifestedBy <http://localhost:8080/fedora/objects/test:3455> .
 
 # EAD does not yet have an ontology, need to use a different standard (MODS or DCTERMS) or use the cnt:ContentAsXML if really necessary
-<file:///png_mets.ttl#qdc1> dct:type "Dossier" ;
+<file:///png_mets2.ttl#qdc1> dct:type "Dossier" ;
 	dct:title "png" ;
 	dct:format "5 cm" ;
 	dct:identifier "test:3451" .
 
-<file:///png_mets.ttl#qdc2> dct:type "Dokument" ;
+<file:///png_mets2.ttl#qdc2> dct:type "Dokument" ;
 	dct:title "Bildschirmfoto 2011-01-28 um 22.53.49" ;
 	dct:identifier "test:3452" .
 
-<file:///png_mets.ttl#qdc3> dct:type "Dokument" ;
+<file:///png_mets2.ttl#qdc3> dct:type "Dokument" ;
 	dct:title "Bildschirmfoto 2011-01-28 um 22.58.58" ;
 	dct:identifier "test:3453" .
 
-<file:///png_mets.ttl#qdc4> dct:type "Dokument" ;
+<file:///png_mets2.ttl#qdc4> dct:type "Dokument" ;
 	dct:title "Bildschirmfoto 2011-01-28 um 23.07.38" ;
 	dct:identifier "test:3454" .
 
-<file:///png_mets.ttl#qdc5> dct:type "Dokument" ;
+<file:///png_mets2.ttl#qdc5> dct:type "Dokument" ;
 	dct:title "Bildschirmfoto 2011-01-29 um 13.00.15" ;
 	dct:identifier "test:3455" .
 
-<file:///png/Bildschirmfoto 2011-01-28 um 22.53.49.png> a mets:File ;
+<file:///png/Bildschirmfoto 2011-01-28 um 22.53.49.png> a premis:File ;
 	premis:hasObjectCharacteristics _:characterstics2 .
 
 _:characterstics2 a premis:ObjectCharacteristics ;
@@ -77,7 +76,7 @@ _:fixity2 a premis:Fixity ;
 	premis:hasMessageDigestAlgorithm <http://id.loc.gov/vocabulary/cryptographicHashFunctions/md5> ;
 	premis:hasMessageDigest "a63e964f86abdbf1ae6a223cb9912030" .
 
-<file:///png/Bildschirmfoto 2011-01-28 um 22.58.58.png> a mets:File ;
+<file:///png/Bildschirmfoto 2011-01-28 um 22.58.58.png> a premis:File ;
 	premis:hasObjectCharacteristics _:characterstics3 .
 
 _:characterstics3 a premis:ObjectCharacteristics ;
@@ -90,7 +89,7 @@ _:fixity3 a premis:Fixity ;
 	premis:hasMessageDigestAlgorithm <http://id.loc.gov/vocabulary/cryptographicHashFunctions/md5> ;
 	premis:hasMessageDigest "c335616a8184cdde1e27e6e45d3a1e53" .
 
-<file:///png/Bildschirmfoto 2011-01-28 um 23.07.38.png> a mets:File ;
+<file:///png/Bildschirmfoto 2011-01-28 um 23.07.38.png> a premis:File ;
 	premis:hasObjectCharacteristics _:characterstics4 .
 
 _:characterstics4 a premis:ObjectCharacteristics ;
@@ -103,7 +102,7 @@ _:fixity4 a premis:Fixity ;
 	premis:hasMessageDigestAlgorithm <http://id.loc.gov/vocabulary/cryptographicHashFunctions/md5> ;
 	premis:hasMessageDigest "a1fc6e93e712be8b979449fbec2e9617" .
 
-<file:///png/Bildschirmfoto 2011-01-229 um 13.00.15.png> a mets:File ;
+<file:///png/Bildschirmfoto 2011-01-229 um 13.00.15.png> a premis:File ;
 	premis:hasObjectCharacteristics _:characterstics5 .
 
 _:characterstics5 a premis:ObjectCharacteristics ;

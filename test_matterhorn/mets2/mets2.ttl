@@ -1,0 +1,76 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.loc.gov/METS2/rdf/v1#>
+  dc:title "METS 2.0 Data Model"@en ;
+  dc:modified "2015-09-30"^^xsd:date ;
+  dc:publisher <http://www.loc.gov/mets/> ;
+  rdfs:seeAlso <https://github.com/mets/METS2> ;
+  rdfs:comment "Ontology for the METS 2.0 Data Model"@en ;
+  owl:versionInfo "2015/09/30" .
+
+<http://www.loc.gov/METS2/rdf/v1#InformationPackage>
+  a rdfs:Class ;
+  rdfs:label "Information Package"@en ;
+  rdfs:comment " This is the root container node of a METS package. "@en ;
+  rdfs:subClassOf <http://www.w3.org/ns/ldp#Container> ;
+  rdfs:isDefinedBy <http://www.loc.gov/METS2/rdf/v1#> .
+
+<http://www.loc.gov/METS2/rdf/v1#MainDivision>
+  a rdfs:Class ;
+  rdfs:label "MainDivision"@en ;
+  rdfs:comment """ A MainDivision is a structural root component for one logical
+      representation of an object and can contain other Divisions of whatever type. """@en ;
+  rdfs:subClassOf <http://www.loc.gov/METS2/rdf/v1#Division> ;
+  rdfs:isDefinedBy <http://www.loc.gov/METS2/rdf/v1#> .
+
+<http://www.loc.gov/METS2/rdf/v1#Division>
+  a rdfs:Class ;
+  rdfs:label "Division"@en ;
+  rdfs:comment """ A Division is a structural root component for one logical
+      representation of an object and can contain other Divisions of whatever type. """@en ;
+  rdfs:subClassOf <http://www.openarchives.org/ore/terms/Aggregation>, <http://www.loc.gov/premis/3/IntellectualEntity> ;
+  rdfs:isDefinedBy <http://www.loc.gov/METS2/rdf/v1#> .
+
+<http://www.loc.gov/METS2/rdf/v1#Representation>
+  a rdfs:Class ;
+  rdfs:label "Division"@en ;
+  rdfs:comment """ A Division is a structural root component for one logical
+      representation of an object and can contain other Divisions of whatever type. """@en ;
+  rdfs:subClassOf <http://www.openarchives.org/ore/terms/Aggregation>, <http://www.loc.gov/premis/3/Representation> ;
+  rdfs:isDefinedBy <http://www.loc.gov/METS2/rdf/v1#> .
+
+<http://www.loc.gov/METS2/rdf/v1#FilePart>
+  a rdfs:Class ;
+  rdfs:label "FilePart"@en ;
+  rdfs:comment """ While a file a a whole is described using the premis:File class,
+      you might want to refer to only a portion of a file. """@en ;
+  rdfs:isDefinedBy <http://www.loc.gov/METS2/rdf/v1#> .
+
+<http://www.loc.gov/METS2/rdf/v1#hasMainDivision>
+  a rdf:Property ;
+  rdfs:label "has main division"@en ;
+  rdfs:comment "Links to a main division contained by this package."@en ;
+  rdfs:domain <http://www.loc.gov/METS2/rdf/v1#InformationPackage> ;
+  rdfs:range <http://www.loc.gov/METS2/rdf/v1#MainDivision> ;
+  rdfs:subPropertyOf <http://www.openarchives.org/ore/terms/aggregates> ;
+  rdfs:isDefinedBy <http://www.loc.gov/METS2/rdf/v1#> .
+
+<http://www.loc.gov/METS2/rdf/v1#isManifestedBy>
+  a rdf:Property ;
+  rdfs:label "is manifested by"@en ;
+  rdfs:comment "Links from a division to a concrete manifestation."@en ;
+  rdfs:range <http://www.loc.gov/METS2/rdf/v1#Division> ;
+  rdfs:domain <http://www.loc.gov/METS2/rdf/v1#FilePart>, <http://www.loc.gov/METS2/rdf/v1#Metadata>, <http://www.loc.gov/premis/3/File>, <http://www.loc.gov/premis/3/Bitstream> ;
+  rdfs:isDefinedBy <http://www.loc.gov/METS2/rdf/v1#> .
+
+<http://www.loc.gov/METS2/rdf/v1#isDescribedBy>
+  a rdf:Property ;
+  rdfs:label "is described by"@en ;
+  rdfs:comment "Links from a division to a descriptive division object."@en ;
+  rdfs:range <http://www.loc.gov/METS2/rdf/v1#Division> ;
+  rdfs:domain <http://www.loc.gov/METS2/rdf/v1#Division>, <http://www.loc.gov/METS2/rdf/v1#Metadata>, <http://www.loc.gov/premis/3/File>, <http://www.loc.gov/premis/3/Bitstream> ;
+  rdfs:isDefinedBy <http://www.loc.gov/METS2/rdf/v1#> .
