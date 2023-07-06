@@ -1,3 +1,6 @@
+> :warning: This work is superceded by work here: https://github.com/mets/METS-schema/tree/mets2
+> There is [a detailed description of the proposed changes](https://github.com/mets/METS-schema/blob/mets2/METS2.md) as of November, 2022.
+
 METS2
 =====
 
@@ -7,4 +10,3 @@ This project contains the working drafts of schema designs and sample files for 
 
 Currently anything in this project should be consider as unsupported, unpublished working drafts.
 
-This work is superceded by work here: https://github.com/mets/METS-schema/tree/mets2
